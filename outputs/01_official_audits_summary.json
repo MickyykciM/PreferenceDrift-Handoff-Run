@@ -1,0 +1,141 @@
+{
+  "v14_verify_development": {
+    "exit_code": 0,
+    "seconds": 0.5,
+    "command": "script experiments/run_measurement_v14.py --run-dir results/runs/20260914_repetition_qwen3_8bit_dev_v14 --verify-only",
+    "stdout_tail": [
+      "    }",
+      "  }",
+      "}"
+    ],
+    "stderr_tail": [
+      "[audit_env] original-root paths mapped: 0"
+    ]
+  },
+  "v14_verify_holdout": {
+    "exit_code": 0,
+    "seconds": 0.4,
+    "command": "script experiments/run_measurement_v14.py --run-dir results/runs/20260914_repetition_qwen3_8bit_holdout_v14 --verify-only",
+    "stdout_tail": [
+      "    }",
+      "  }",
+      "}"
+    ],
+    "stderr_tail": [
+      "[audit_env] original-root paths mapped: 0"
+    ]
+  },
+  "v14_full_audit": {
+    "exit_code": 0,
+    "seconds": 2.0,
+    "command": "script experiments/audit_measurement_v14.py --development results/runs/20260914_repetition_qwen3_8bit_dev_v14 --holdout results/runs/20260914_repetition_qwen3_8bit_holdout_v14 --selection results/designs/repetition_qwen3_8bit_locked_selection_v14.json --write-to E:\\T'I'Y\\PreferenceDrift-Handoff-Run\\outputs\\official\\measurement_repair_v14_final_audit.rerun.json",
+    "stdout_tail": [
+      "    \"v14\": \"opened_validation\"",
+      "  }",
+      "}"
+    ],
+    "stderr_tail": [
+      "[audit_env] original-root paths mapped: 24"
+    ]
+  },
+  "v15_verify_calibration": {
+    "exit_code": 0,
+    "seconds": 0.5,
+    "command": "script experiments/run_pressure_v15.py --plan results/designs/pressure_v15_locked_plan.json --out results/runs/20260916_pressure_v15_calibration --verify-only",
+    "stdout_tail": [
+      "    }",
+      "  }",
+      "}"
+    ],
+    "stderr_tail": [
+      "[audit_env] original-root paths mapped: 1"
+    ]
+  },
+  "v15_verify_study": {
+    "exit_code": 0,
+    "seconds": 0.7,
+    "command": "script experiments/run_pressure_v15.py --plan results/designs/pressure_v15_locked_plan.json --out results/runs/20260916_pressure_v15_study --verify-only",
+    "stdout_tail": [
+      "    \"publication_ready\": false",
+      "  }",
+      "}"
+    ],
+    "stderr_tail": [
+      "[audit_env] original-root paths mapped: 3"
+    ]
+  },
+  "v15b_verify": {
+    "exit_code": 0,
+    "seconds": 0.8,
+    "command": "script diagnostics/updated_task_v15b.py --plan results/designs/updated_task_v15b_locked_plan.json --out results/runs/20260916_updated_task_v15b --verify-only",
+    "stdout_tail": [
+      "  },",
+      "  \"caution\": \"Old history PLUS explicit update wording vs fresh question; not a pure isolated history effect.\"",
+      "}"
+    ],
+    "stderr_tail": [
+      "[audit_env] original-root paths mapped: 5"
+    ]
+  },
+  "v15_full_audit": {
+    "exit_code": 0,
+    "seconds": 2.2,
+    "command": "call diagnostics.audit_pressure_v15:audit --json-out E:\\T'I'Y\\PreferenceDrift-Handoff-Run\\outputs\\official\\pressure_v15_final_audit.rerun.json",
+    "stdout_tail": [
+      "{\"written\": \"E:\\\\T'I'Y\\\\PreferenceDrift-Handoff-Run\\\\outputs\\\\official\\\\pressure_v15_final_audit.rerun.json\", \"original_root_paths_mapped\": 27}"
+    ],
+    "stderr_tail": [
+      "[audit_env] original-root paths mapped: 27"
+    ]
+  },
+  "v16_verify_calibration": {
+    "exit_code": 0,
+    "seconds": 0.7,
+    "command": "script studies/revision_v16/run.py --verify-only --out results/runs/20260916_revision_v16_discovery_calibration",
+    "stdout_tail": [
+      "  },",
+      "  \"primary\": {}",
+      "}"
+    ],
+    "stderr_tail": [
+      "[audit_env] original-root paths mapped: 1"
+    ]
+  },
+  "v16_verify_study": {
+    "exit_code": 0,
+    "seconds": 1.0,
+    "command": "script studies/revision_v16/run.py --verify-only --out results/runs/20260916_revision_v16_discovery_study",
+    "stdout_tail": [
+      "    \"caution\": \"Exploratory very-small-cluster interval; not confirmatory significance.\"",
+      "  }",
+      "}"
+    ],
+    "stderr_tail": [
+      "[audit_env] original-root paths mapped: 3"
+    ]
+  },
+  "v16_full_audit": {
+    "exit_code": 0,
+    "seconds": 3.8,
+    "command": "call diagnostics.audit_revision_v16:audit --json-out E:\\T'I'Y\\PreferenceDrift-Handoff-Run\\outputs\\official\\revision_v16_final_audit.rerun.json --args-json [\"path:results/runs/20260916_revision_v16\"]",
+    "stdout_tail": [
+      "{\"written\": \"E:\\\\T'I'Y\\\\PreferenceDrift-Handoff-Run\\\\outputs\\\\official\\\\revision_v16_final_audit.rerun.json\", \"original_root_paths_mapped\": 16}"
+    ],
+    "stderr_tail": [
+      "[audit_env] original-root paths mapped: 16"
+    ]
+  },
+  "pytest_full_suite": {
+    "exit_code": 1,
+    "seconds": 43.1,
+    "command": "pytest -q -p no:cacheprovider --junitxml=E:\\T'I'Y\\PreferenceDrift-Handoff-Run\\outputs\\official\\pytest_windows_adapter.xml --basetemp=E:\\T'I'Y\\PreferenceDrift-Handoff-Run\\_work\\pytest_tmp",
+    "stdout_tail": [
+      "=========================== short test summary info ===========================",
+      "FAILED tests/test_measurement_package.py::test_package_preserves_code_and_data_excludes_runtime_and_secrets",
+      "1 failed, 282 passed in 42.29s"
+    ],
+    "stderr_tail": [
+      "[audit_env] original-root paths mapped: 0"
+    ]
+  }
+}

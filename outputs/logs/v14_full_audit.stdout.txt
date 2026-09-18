@@ -1,0 +1,22 @@
+{
+  "integrity_ok": true,
+  "decision": {
+    "scoped_measurement_ready": true,
+    "joint_task_validated": false,
+    "preference_effect_established": false,
+    "publication_ready": false
+  },
+  "completed_generations_this_repair_round": 2879,
+  "timeline": {
+    "bank_committed": "2026-09-15T03:07:00.438937+00:00",
+    "development_started": "2026-09-15T03:08:59.301397+00:00",
+    "selection_locked": "2026-09-15T05:03:28.431558+00:00",
+    "validation_started": "2026-09-15T05:03:31.262720+00:00"
+  },
+  "bank_status": {
+    "v5": "opened_development",
+    "v7": "opened_development",
+    "v10": "opened_development",
+    "v14": "opened_validation"
+  }
+}

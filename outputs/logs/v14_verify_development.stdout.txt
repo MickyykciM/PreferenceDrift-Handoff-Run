@@ -1,0 +1,162 @@
+{
+  "integrity": {
+    "integrity_ok": true,
+    "phase": "development",
+    "unique_prompts": 384,
+    "case_alias_records": 384,
+    "raw_sha256": "b2171414a11a338e259d710472c73d0712dab5e766bc63c3b0874f829b0a5e68",
+    "new_calls_last_invocation": 0
+  },
+  "decision": {
+    "phase": "development",
+    "passed": true,
+    "axes": {
+      "truth": {
+        "passed": true,
+        "accuracy_format_label_checks": {
+          "legacy/truth/positive_first": true,
+          "legacy/truth/negative_first": true,
+          "extension/truth/positive_first": true,
+          "extension/truth/negative_first": true,
+          "opened_v5/truth/positive_first": true,
+          "opened_v5/truth/negative_first": true,
+          "opened_v7/truth/positive_first": true,
+          "opened_v7/truth/negative_first": true,
+          "opened_v10/truth/positive_first": true,
+          "opened_v10/truth/negative_first": true
+        },
+        "stability_checks": {
+          "legacy/truth": true,
+          "extension/truth": true,
+          "opened_v5/truth": true,
+          "opened_v7/truth": true,
+          "opened_v10/truth": true
+        }
+      },
+      "validity": {
+        "passed": true,
+        "accuracy_format_label_checks": {
+          "legacy/validity/positive_first": true,
+          "legacy/validity/negative_first": true,
+          "extension/validity/positive_first": true,
+          "extension/validity/negative_first": true,
+          "opened_v5/validity/positive_first": true,
+          "opened_v5/validity/negative_first": true,
+          "opened_v7/validity/positive_first": true,
+          "opened_v7/validity/negative_first": true,
+          "opened_v10/validity/positive_first": true,
+          "opened_v10/validity/negative_first": true
+        },
+        "stability_checks": {
+          "legacy/validity": true,
+          "extension/validity": true,
+          "opened_v5/validity": true,
+          "opened_v7/validity": true,
+          "opened_v10/validity": true
+        }
+      }
+    }
+  },
+  "cells": {
+    "legacy/truth/positive_first": {
+      "correct": 8,
+      "n": 8,
+      "unknown": 0
+    },
+    "legacy/truth/negative_first": {
+      "correct": 8,
+      "n": 8,
+      "unknown": 0
+    },
+    "extension/truth/positive_first": {
+      "correct": 16,
+      "n": 16,
+      "unknown": 0
+    },
+    "extension/truth/negative_first": {
+      "correct": 16,
+      "n": 16,
+      "unknown": 0
+    },
+    "opened_v5/truth/positive_first": {
+      "correct": 24,
+      "n": 24,
+      "unknown": 0
+    },
+    "opened_v5/truth/negative_first": {
+      "correct": 24,
+      "n": 24,
+      "unknown": 0
+    },
+    "opened_v7/truth/positive_first": {
+      "correct": 24,
+      "n": 24,
+      "unknown": 0
+    },
+    "opened_v7/truth/negative_first": {
+      "correct": 24,
+      "n": 24,
+      "unknown": 0
+    },
+    "opened_v10/truth/positive_first": {
+      "correct": 24,
+      "n": 24,
+      "unknown": 0
+    },
+    "opened_v10/truth/negative_first": {
+      "correct": 24,
+      "n": 24,
+      "unknown": 0
+    },
+    "legacy/validity/positive_first": {
+      "correct": 8,
+      "n": 8,
+      "unknown": 0
+    },
+    "legacy/validity/negative_first": {
+      "correct": 8,
+      "n": 8,
+      "unknown": 0
+    },
+    "extension/validity/positive_first": {
+      "correct": 16,
+      "n": 16,
+      "unknown": 0
+    },
+    "extension/validity/negative_first": {
+      "correct": 16,
+      "n": 16,
+      "unknown": 0
+    },
+    "opened_v5/validity/positive_first": {
+      "correct": 22,
+      "n": 24,
+      "unknown": 0
+    },
+    "opened_v5/validity/negative_first": {
+      "correct": 22,
+      "n": 24,
+      "unknown": 0
+    },
+    "opened_v7/validity/positive_first": {
+      "correct": 24,
+      "n": 24,
+      "unknown": 0
+    },
+    "opened_v7/validity/negative_first": {
+      "correct": 24,
+      "n": 24,
+      "unknown": 0
+    },
+    "opened_v10/validity/positive_first": {
+      "correct": 23,
+      "n": 24,
+      "unknown": 0
+    },
+    "opened_v10/validity/negative_first": {
+      "correct": 23,
+      "n": 24,
+      "unknown": 0
+    }
+  }
+}

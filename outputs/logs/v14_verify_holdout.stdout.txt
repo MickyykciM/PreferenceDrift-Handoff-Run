@@ -1,0 +1,58 @@
+{
+  "integrity": {
+    "integrity_ok": true,
+    "phase": "holdout",
+    "unique_prompts": 96,
+    "case_alias_records": 96,
+    "raw_sha256": "72774ed35c684695cf5c728497bf37752d1b3744927e4f35ef43986c6ac8644b",
+    "new_calls_last_invocation": 0
+  },
+  "decision": {
+    "phase": "holdout",
+    "passed": true,
+    "axes": {
+      "truth": {
+        "passed": true,
+        "accuracy_format_label_checks": {
+          "heldout_v14/truth/positive_first": true,
+          "heldout_v14/truth/negative_first": true
+        },
+        "stability_checks": {
+          "heldout_v14/truth": true
+        }
+      },
+      "validity": {
+        "passed": true,
+        "accuracy_format_label_checks": {
+          "heldout_v14/validity/positive_first": true,
+          "heldout_v14/validity/negative_first": true
+        },
+        "stability_checks": {
+          "heldout_v14/validity": true
+        }
+      }
+    }
+  },
+  "cells": {
+    "heldout_v14/truth/positive_first": {
+      "correct": 24,
+      "n": 24,
+      "unknown": 0
+    },
+    "heldout_v14/truth/negative_first": {
+      "correct": 24,
+      "n": 24,
+      "unknown": 0
+    },
+    "heldout_v14/validity/positive_first": {
+      "correct": 22,
+      "n": 24,
+      "unknown": 0
+    },
+    "heldout_v14/validity/negative_first": {
+      "correct": 24,
+      "n": 24,
+      "unknown": 0
+    }
+  }
+}

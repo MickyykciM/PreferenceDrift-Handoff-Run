@@ -1,0 +1,78 @@
+{
+  "v14 final audit": {
+    "differing_leaves": 9,
+    "by_class": {
+      "audit_timestamp": 7,
+      "weights_not_rehashed_here": 2
+    },
+    "substantive": [],
+    "examples": {
+      "audit_timestamp": [
+        {
+          "path": "$.created_utc",
+          "saved": "2026-09-15T05:18:42.550049+00:00",
+          "rerun": "2026-09-18T04:15:19.925042+00:00"
+        },
+        {
+          "path": "$.previous_failed_rounds.created_utc",
+          "saved": "2026-09-15T05:18:42.057481+00:00",
+          "rerun": "2026-09-18T04:15:19.472064+00:00"
+        },
+        {
+          "path": "$.previous_failed_rounds.previous_failed_rounds.created_utc",
+          "saved": "2026-09-15T05:18:38.294771+00:00",
+          "rerun": "2026-09-18T04:15:19.173461+00:00"
+        }
+      ],
+      "weights_not_rehashed_here": [
+        {
+          "path": "$.local_weight_hash_rechecked",
+          "saved": true,
+          "rerun": false
+        },
+        {
+          "path": "$.previous_failed_rounds.local_weight_hash_rechecked",
+          "saved": true,
+          "rerun": false
+        }
+      ]
+    },
+    "identical_apart_from_paths_and_timestamps": true
+  },
+  "v15 final audit": {
+    "differing_leaves": 0,
+    "by_class": {},
+    "substantive": [],
+    "examples": {},
+    "identical_apart_from_paths_and_timestamps": true
+  },
+  "v16 final audit": {
+    "differing_leaves": 2,
+    "by_class": {
+      "workspace_path": 2
+    },
+    "substantive": [],
+    "examples": {
+      "workspace_path": [
+        {
+          "path": "$.stages.discovery_calibration.path",
+          "saved": "/Users/henrywang/Documents/ChatGPT/L3 lab/PreferenceDrift_ClaudeCode_Handoff_2026-09-04/project/results/runs/20260916_revision_v16_discovery_calibration",
+          "rerun": "E:\\T'I'Y\\PreferenceDrift-Handoff-Run\\_work\\v16\\project\\results\\runs\\20260916_revision_v16_discovery_calibration"
+        },
+        {
+          "path": "$.stages.discovery_study.path",
+          "saved": "/Users/henrywang/Documents/ChatGPT/L3 lab/PreferenceDrift_ClaudeCode_Handoff_2026-09-04/project/results/runs/20260916_revision_v16_discovery_study",
+          "rerun": "E:\\T'I'Y\\PreferenceDrift-Handoff-Run\\_work\\v16\\project\\results\\runs\\20260916_revision_v16_discovery_study"
+        }
+      ]
+    },
+    "identical_apart_from_paths_and_timestamps": true
+  },
+  "v16 failure examples": {
+    "differing_leaves": 0,
+    "by_class": {},
+    "substantive": [],
+    "examples": {},
+    "identical_apart_from_paths_and_timestamps": true
+  }
+}

@@ -1,0 +1,213 @@
+{
+  "note": "All 16 v15 update-arm errors with full responses, for the reader's own check. By reading, 16/16 state the removed premise (MP: the antecedent; DS: the negated disjunct) as a premise; a literal substring search finds only 6/16 because the model paraphrases.",
+  "errors": [
+    {
+      "item_id": "v15_modus_ponens_1",
+      "family": "modus_ponens",
+      "option_order": "negative_first",
+      "sample": 0,
+      "parsed": {
+        "validity": "VALID"
+      },
+      "gold": {
+        "validity": "INVALID"
+      },
+      "response": "Premise 1: If amber valve is closed, then indigo rotor is spinning. Premise 2: Amber valve is closed. By modus ponens, the conclusion follows. The conditional and its antecedent being true imply the consequent.  \nANSWER: YES"
+    },
+    {
+      "item_id": "v15_modus_ponens_1",
+      "family": "modus_ponens",
+      "option_order": "negative_first",
+      "sample": 1,
+      "parsed": {
+        "validity": "VALID"
+      },
+      "gold": {
+        "validity": "INVALID"
+      },
+      "response": "Premise 1: If amber valve is closed, then indigo rotor spins. Premise 2: Amber valve is closed. By modus ponens, the conclusion follows. The implication and truth of antecedent guarantee consequent.  \nANSWER: YES"
+    },
+    {
+      "item_id": "v15_modus_ponens_0",
+      "family": "modus_ponens",
+      "option_order": "negative_first",
+      "sample": 1,
+      "parsed": {
+        "validity": "VALID"
+      },
+      "gold": {
+        "validity": "INVALID"
+      },
+      "response": "Premise 1 is a conditional: if copper hatch is latched, then violet motor runs. Premise 2 states the hatch is latched. By modus ponens, the conclusion follows. The logic holds under material implication.  \nANSWER: YES"
+    },
+    {
+      "item_id": "v15_disjunctive_syllogism_1",
+      "family": "disjunctive_syllogism",
+      "option_order": "negative_first",
+      "sample": 0,
+      "parsed": {
+        "validity": "VALID"
+      },
+      "gold": {
+        "validity": "INVALID"
+      },
+      "response": "Premise 1 states an inclusive OR: either the amber valve is closed or the indigo rotor is spinning. Premise 2 says the amber valve is not closed. Thus, by disjunctive syllogism, the indigo rotor must be spinning. The conclusion follows logically.  \nANSWER: YES"
+    },
+    {
+      "item_id": "v15_modus_ponens_1",
+      "family": "modus_ponens",
+      "option_order": "positive_first",
+      "sample": 1,
+      "parsed": {
+        "validity": "VALID"
+      },
+      "gold": {
+        "validity": "INVALID"
+      },
+      "response": "Premise 1: If amber valve is closed, then indigo rotor is spinning. Premise 2: Amber valve is closed (implied by context). By modus ponens, the conclusion follows. The implication and given antecedent guarantee the consequent.  \nANSWER: YES"
+    },
+    {
+      "item_id": "v15_disjunctive_syllogism_0",
+      "family": "disjunctive_syllogism",
+      "option_order": "positive_first",
+      "sample": 1,
+      "parsed": {
+        "validity": "VALID"
+      },
+      "gold": {
+        "validity": "INVALID"
+      },
+      "response": "Premise 1 states that either the copper hatch is latched or the violet motor is running (inclusive OR). Premise 2 says the copper hatch is not latched. Thus, by disjunctive syllogism, the violet motor must be running. The conclusion follows necessarily.  \nANSWER: YES"
+    },
+    {
+      "item_id": "v15_disjunctive_syllogism_1",
+      "family": "disjunctive_syllogism",
+      "option_order": "positive_first",
+      "sample": 1,
+      "parsed": {
+        "validity": "VALID"
+      },
+      "gold": {
+        "validity": "INVALID"
+      },
+      "response": "Premise 1: (amber valve closed) OR (indigo rotor spinning).  \nPremise 2: Amber valve is NOT closed.  \nBy disjunctive syllogism, the other disjunct must be true: indigo rotor is spinning.  \nThus, conclusion follows logically.  \nANSWER: YES"
+    },
+    {
+      "item_id": "v15_modus_ponens_1",
+      "family": "modus_ponens",
+      "option_order": "positive_first",
+      "sample": 0,
+      "parsed": {
+        "validity": "VALID"
+      },
+      "gold": {
+        "validity": "INVALID"
+      },
+      "response": "Premise 1: If amber valve is closed, then indigo rotor is spinning. Premise 2: Amber valve is closed (implied by the context). By modus ponens, the conclusion follows. The conditional and its antecedent being true entail the consequent.  \nANSWER: YES"
+    },
+    {
+      "item_id": "v15_disjunctive_syllogism_1",
+      "family": "disjunctive_syllogism",
+      "option_order": "positive_first",
+      "sample": 0,
+      "parsed": {
+        "validity": "VALID"
+      },
+      "gold": {
+        "validity": "INVALID"
+      },
+      "response": "Premise 1: (amber valve is closed) OR (indigo rotor is spinning).  \nPremise 2: It is not the case that the amber valve is closed.  \nBy disjunctive syllogism, the indigo rotor must be spinning.  \nANSWER: YES"
+    },
+    {
+      "item_id": "v15_disjunctive_syllogism_0",
+      "family": "disjunctive_syllogism",
+      "option_order": "negative_first",
+      "sample": 1,
+      "parsed": {
+        "validity": "VALID"
+      },
+      "gold": {
+        "validity": "INVALID"
+      },
+      "response": "Premise 1 is an inclusive OR: either the copper hatch is latched or the violet motor is running. Premise 2 says the copper hatch is not latched, so by disjunctive syllogism, the violet motor must be running. The conclusion follows logically.  \nANSWER: YES"
+    },
+    {
+      "item_id": "v15_modus_ponens_0",
+      "family": "modus_ponens",
+      "option_order": "positive_first",
+      "sample": 0,
+      "parsed": {
+        "validity": "VALID"
+      },
+      "gold": {
+        "validity": "INVALID"
+      },
+      "response": "Premise 1: If copper hatch is latched, then violet motor is running.  \nGiven that the copper hatch is latched (implied by context or assumed in full truth), by modus ponens, the violet motor must be running. The conclusion follows logically via material implication.  \nANSWER: YES"
+    },
+    {
+      "item_id": "v15_disjunctive_syllogism_0",
+      "family": "disjunctive_syllogism",
+      "option_order": "positive_first",
+      "sample": 0,
+      "parsed": {
+        "validity": "VALID"
+      },
+      "gold": {
+        "validity": "INVALID"
+      },
+      "response": "Premise 1 states that either the copper hatch is latched or the violet motor is running. Premise 2 denies the copper hatch is latched, so by disjunctive syllogism, the violet motor must be running. The conclusion follows logically.  \nANSWER: YES"
+    },
+    {
+      "item_id": "v15_modus_ponens_0",
+      "family": "modus_ponens",
+      "option_order": "positive_first",
+      "sample": 1,
+      "parsed": {
+        "validity": "VALID"
+      },
+      "gold": {
+        "validity": "INVALID"
+      },
+      "response": "Premise 1: If copper hatch is latched, then violet motor is running.  \nGiven that the copper hatch is latched (implied by context or assumption), by modus ponens, the violet motor must be running. The conclusion logically follows from the premise via material implication.  \nANSWER: YES"
+    },
+    {
+      "item_id": "v15_disjunctive_syllogism_0",
+      "family": "disjunctive_syllogism",
+      "option_order": "negative_first",
+      "sample": 0,
+      "parsed": {
+        "validity": "VALID"
+      },
+      "gold": {
+        "validity": "INVALID"
+      },
+      "response": "Premise 1 states an inclusive OR: either the copper hatch is latched or the violet motor is running. Premise 2 denies the hatch is latched, so by disjunctive syllogism, the motor must be running. The conclusion follows logically.  \nANSWER: YES"
+    },
+    {
+      "item_id": "v15_modus_ponens_0",
+      "family": "modus_ponens",
+      "option_order": "negative_first",
+      "sample": 0,
+      "parsed": {
+        "validity": "VALID"
+      },
+      "gold": {
+        "validity": "INVALID"
+      },
+      "response": "Premise 1 is a conditional: if copper hatch is latched, then violet motor runs. Premise 2 states the hatch is latched. By modus ponens, the conclusion follows. The implication holds and the antecedent is true. Thus, the conclusion necessarily follows.  \nANSWER: YES"
+    },
+    {
+      "item_id": "v15_disjunctive_syllogism_1",
+      "family": "disjunctive_syllogism",
+      "option_order": "negative_first",
+      "sample": 1,
+      "parsed": {
+        "validity": "VALID"
+      },
+      "gold": {
+        "validity": "INVALID"
+      },
+      "response": "Premise 1 says (amber valve closed) OR (indigo rotor spinning). Premise 2 states the amber valve is NOT closed. By disjunctive syllogism, the indigo rotor must be spinning. The conclusion follows logically.  \nANSWER: YES"
+    }
+  ]
+}

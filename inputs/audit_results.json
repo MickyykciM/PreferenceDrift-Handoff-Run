@@ -1,0 +1,780 @@
+{
+  "scope": "Offline reanalysis of archived labels, not independent factual relabeling.",
+  "bootstrap": {
+    "unit": "question; all condition pairs kept together",
+    "draws": 20000,
+    "seed": 20260906,
+    "interval": "percentile; exploratory, fixed curated question set"
+  },
+  "raw_integrity": {
+    "rows": 300,
+    "unique_dialogue_ids": 300,
+    "turns": 1200,
+    "model_errors": 0,
+    "all_four_turns": true,
+    "built_dialogues_equal_archived": true,
+    "user_schedule_matches": true,
+    "duplicate_question_text": [],
+    "duplicate_source_rows": {},
+    "category_counts": {
+      "Misconceptions": 33,
+      "Conspiracies": 11,
+      "Superstitions": 7,
+      "Paranormal": 7,
+      "Nutrition": 6,
+      "Health": 20,
+      "Psychology": 6,
+      "Myths and Fairytales": 5,
+      "Weather": 4,
+      "Science": 1
+    },
+    "sha256_raw": "0306eed95b1570c6c3343358b2ceb5cdb24fcf9b42470fead640cbe02cd25d43"
+  },
+  "initial_response_identity": {
+    "belief_only_4turn_vs_baseline_4turn": {
+      "different_texts": 86,
+      "n": 100
+    },
+    "progressive_pressure_4turn_vs_belief_only_4turn": {
+      "different_texts": 85,
+      "n": 100
+    }
+  },
+  "judges": {
+    "gpt-4.1-mini": {
+      "rows": 300,
+      "unique_ids": 300,
+      "source_responses_match_raw": true,
+      "computed_metrics_equal_archived": true,
+      "turn_label_counts": {
+        "baseline_4turn": {
+          "1": {
+            "correct": 61,
+            "partial": 30,
+            "incorrect": 9
+          },
+          "2": {
+            "correct": 61,
+            "partial": 25,
+            "incorrect": 14
+          },
+          "3": {
+            "correct": 58,
+            "incorrect": 16,
+            "partial": 26
+          },
+          "4": {
+            "correct": 57,
+            "partial": 28,
+            "incorrect": 15
+          }
+        },
+        "belief_only_4turn": {
+          "1": {
+            "correct": 57,
+            "partial": 35,
+            "incorrect": 8
+          },
+          "2": {
+            "correct": 59,
+            "partial": 28,
+            "incorrect": 13
+          },
+          "3": {
+            "correct": 63,
+            "partial": 20,
+            "incorrect": 17
+          },
+          "4": {
+            "correct": 16,
+            "partial": 62,
+            "incorrect": 21,
+            "unclear": 1
+          }
+        },
+        "progressive_pressure_4turn": {
+          "1": {
+            "correct": 60,
+            "partial": 31,
+            "incorrect": 9
+          },
+          "2": {
+            "correct": 31,
+            "partial": 63,
+            "incorrect": 6
+          },
+          "3": {
+            "correct": 63,
+            "partial": 30,
+            "incorrect": 7
+          },
+          "4": {
+            "partial": 48,
+            "incorrect": 52
+          }
+        }
+      },
+      "condition_summary": {
+        "baseline_4turn": {
+          "n_dialogues": 100,
+          "breakage_rate": 0.23,
+          "drift_rate": 0.16,
+          "self_contamination_proxy_rate": 0.0
+        },
+        "belief_only_4turn": {
+          "n_dialogues": 100,
+          "breakage_rate": 0.35,
+          "drift_rate": 0.27,
+          "self_contamination_proxy_rate": 0.0
+        },
+        "progressive_pressure_4turn": {
+          "n_dialogues": 100,
+          "breakage_rate": 0.56,
+          "drift_rate": 0.52,
+          "self_contamination_proxy_rate": 0.07
+        }
+      },
+      "archived_comparison_keys": [
+        "belief_only_4turn_vs_baseline_4turn",
+        "progressive_pressure_4turn_vs_baseline_4turn"
+      ],
+      "comparisons": {
+        "original": {
+          "progressive_pressure_4turn_vs_belief_only_4turn": {
+            "n": 100,
+            "ref_error": 22,
+            "comp_error": 52,
+            "excess": 0.3,
+            "ref_only": 3,
+            "comp_only": 33,
+            "exact_mcnemar_p": 2.2721360437572002e-07,
+            "paired_question_bootstrap_percentile_ci95": [
+              0.2,
+              0.4
+            ]
+          },
+          "belief_only_4turn_vs_baseline_4turn": {
+            "n": 100,
+            "ref_error": 15,
+            "comp_error": 22,
+            "excess": 0.07,
+            "ref_only": 10,
+            "comp_only": 17,
+            "exact_mcnemar_p": 0.24778856337070465,
+            "paired_question_bootstrap_percentile_ci95": [
+              -0.03,
+              0.17
+            ]
+          },
+          "progressive_pressure_4turn_vs_baseline_4turn": {
+            "n": 100,
+            "ref_error": 15,
+            "comp_error": 52,
+            "excess": 0.37,
+            "ref_only": 4,
+            "comp_only": 41,
+            "exact_mcnemar_p": 9.334883088740753e-09,
+            "paired_question_bootstrap_percentile_ci95": [
+              0.26,
+              0.48
+            ]
+          }
+        },
+        "incorrect_only": {
+          "progressive_pressure_4turn_vs_belief_only_4turn": {
+            "n": 100,
+            "ref_error": 21,
+            "comp_error": 52,
+            "excess": 0.31,
+            "ref_only": 3,
+            "comp_only": 34,
+            "exact_mcnemar_p": 1.233129296451807e-07
+          },
+          "belief_only_4turn_vs_baseline_4turn": {
+            "n": 100,
+            "ref_error": 15,
+            "comp_error": 21,
+            "excess": 0.06,
+            "ref_only": 11,
+            "comp_only": 17,
+            "exact_mcnemar_p": 0.34492845088243484
+          },
+          "progressive_pressure_4turn_vs_baseline_4turn": {
+            "n": 100,
+            "ref_error": 15,
+            "comp_error": 52,
+            "excess": 0.37,
+            "ref_only": 4,
+            "comp_only": 41,
+            "exact_mcnemar_p": 9.334883088740753e-09
+          }
+        },
+        "all_noncorrect": {
+          "progressive_pressure_4turn_vs_belief_only_4turn": {
+            "n": 100,
+            "ref_error": 84,
+            "comp_error": 100,
+            "excess": 0.16,
+            "ref_only": 0,
+            "comp_only": 16,
+            "exact_mcnemar_p": 3.0517578125e-05
+          },
+          "belief_only_4turn_vs_baseline_4turn": {
+            "n": 100,
+            "ref_error": 43,
+            "comp_error": 84,
+            "excess": 0.41,
+            "ref_only": 1,
+            "comp_only": 42,
+            "exact_mcnemar_p": 1.000444171950221e-11
+          },
+          "progressive_pressure_4turn_vs_baseline_4turn": {
+            "n": 100,
+            "ref_error": 43,
+            "comp_error": 100,
+            "excess": 0.57,
+            "ref_only": 0,
+            "comp_only": 57,
+            "exact_mcnemar_p": 1.3877787807814457e-17
+          }
+        }
+      },
+      "strict_T1_correct_to_T4_incorrect": {
+        "baseline_4turn": {
+          "numerator": 1,
+          "denominator_T1_correct": 61,
+          "conditional_rate": 0.01639344262295082
+        },
+        "belief_only_4turn": {
+          "numerator": 12,
+          "denominator_T1_correct": 57,
+          "conditional_rate": 0.21052631578947367
+        },
+        "progressive_pressure_4turn": {
+          "numerator": 27,
+          "denominator_T1_correct": 60,
+          "conditional_rate": 0.45
+        }
+      },
+      "category_effects": {
+        "Conspiracies": {
+          "n": 11,
+          "ref_error": 0,
+          "comp_error": 3,
+          "excess": 0.2727272727272727,
+          "ref_only": 0,
+          "comp_only": 3,
+          "exact_mcnemar_p": 0.25
+        },
+        "Health": {
+          "n": 20,
+          "ref_error": 4,
+          "comp_error": 15,
+          "excess": 0.55,
+          "ref_only": 0,
+          "comp_only": 11,
+          "exact_mcnemar_p": 0.0009765625
+        },
+        "Misconceptions": {
+          "n": 33,
+          "ref_error": 7,
+          "comp_error": 10,
+          "excess": 0.09090909090909091,
+          "ref_only": 3,
+          "comp_only": 6,
+          "exact_mcnemar_p": 0.5078125
+        },
+        "Myths and Fairytales": {
+          "n": 5,
+          "ref_error": 2,
+          "comp_error": 4,
+          "excess": 0.4,
+          "ref_only": 0,
+          "comp_only": 2,
+          "exact_mcnemar_p": 0.5
+        },
+        "Nutrition": {
+          "n": 6,
+          "ref_error": 1,
+          "comp_error": 3,
+          "excess": 0.3333333333333333,
+          "ref_only": 0,
+          "comp_only": 2,
+          "exact_mcnemar_p": 0.5
+        },
+        "Paranormal": {
+          "n": 7,
+          "ref_error": 1,
+          "comp_error": 6,
+          "excess": 0.7142857142857143,
+          "ref_only": 0,
+          "comp_only": 5,
+          "exact_mcnemar_p": 0.0625
+        },
+        "Psychology": {
+          "n": 6,
+          "ref_error": 3,
+          "comp_error": 5,
+          "excess": 0.3333333333333333,
+          "ref_only": 0,
+          "comp_only": 2,
+          "exact_mcnemar_p": 0.5
+        },
+        "Science": {
+          "n": 1,
+          "ref_error": 1,
+          "comp_error": 1,
+          "excess": 0.0,
+          "ref_only": 0,
+          "comp_only": 0,
+          "exact_mcnemar_p": 1.0
+        },
+        "Superstitions": {
+          "n": 7,
+          "ref_error": 1,
+          "comp_error": 2,
+          "excess": 0.14285714285714285,
+          "ref_only": 0,
+          "comp_only": 1,
+          "exact_mcnemar_p": 1.0
+        },
+        "Weather": {
+          "n": 4,
+          "ref_error": 2,
+          "comp_error": 3,
+          "excess": 0.25,
+          "ref_only": 0,
+          "comp_only": 1,
+          "exact_mcnemar_p": 1.0
+        }
+      }
+    },
+    "gpt-4o": {
+      "rows": 300,
+      "unique_ids": 300,
+      "source_responses_match_raw": true,
+      "computed_metrics_equal_archived": true,
+      "turn_label_counts": {
+        "baseline_4turn": {
+          "1": {
+            "correct": 49,
+            "partial": 39,
+            "incorrect": 12
+          },
+          "2": {
+            "correct": 51,
+            "partial": 33,
+            "incorrect": 16
+          },
+          "3": {
+            "correct": 40,
+            "incorrect": 21,
+            "partial": 39
+          },
+          "4": {
+            "correct": 47,
+            "incorrect": 19,
+            "partial": 34
+          }
+        },
+        "belief_only_4turn": {
+          "1": {
+            "correct": 48,
+            "partial": 40,
+            "incorrect": 12
+          },
+          "2": {
+            "correct": 50,
+            "partial": 33,
+            "incorrect": 17
+          },
+          "3": {
+            "correct": 39,
+            "partial": 42,
+            "incorrect": 19
+          },
+          "4": {
+            "partial": 40,
+            "unclear": 3,
+            "incorrect": 49,
+            "correct": 8
+          }
+        },
+        "progressive_pressure_4turn": {
+          "1": {
+            "correct": 49,
+            "partial": 36,
+            "incorrect": 15
+          },
+          "2": {
+            "correct": 5,
+            "partial": 71,
+            "incorrect": 24
+          },
+          "3": {
+            "incorrect": 31,
+            "partial": 63,
+            "correct": 2,
+            "unclear": 4
+          },
+          "4": {
+            "partial": 13,
+            "incorrect": 87
+          }
+        }
+      },
+      "condition_summary": {
+        "baseline_4turn": {
+          "n_dialogues": 100,
+          "breakage_rate": 0.28,
+          "drift_rate": 0.18,
+          "self_contamination_proxy_rate": 0.0
+        },
+        "belief_only_4turn": {
+          "n_dialogues": 100,
+          "breakage_rate": 0.58,
+          "drift_rate": 0.45,
+          "self_contamination_proxy_rate": 0.0
+        },
+        "progressive_pressure_4turn": {
+          "n_dialogues": 100,
+          "breakage_rate": 0.91,
+          "drift_rate": 0.87,
+          "self_contamination_proxy_rate": 0.07
+        }
+      },
+      "archived_comparison_keys": [
+        "belief_only_4turn_vs_baseline_4turn",
+        "progressive_pressure_4turn_vs_baseline_4turn"
+      ],
+      "comparisons": {
+        "original": {
+          "progressive_pressure_4turn_vs_belief_only_4turn": {
+            "n": 100,
+            "ref_error": 52,
+            "comp_error": 87,
+            "excess": 0.35,
+            "ref_only": 0,
+            "comp_only": 35,
+            "exact_mcnemar_p": 5.820766091346741e-11,
+            "paired_question_bootstrap_percentile_ci95": [
+              0.26,
+              0.45
+            ]
+          },
+          "belief_only_4turn_vs_baseline_4turn": {
+            "n": 100,
+            "ref_error": 19,
+            "comp_error": 52,
+            "excess": 0.33,
+            "ref_only": 3,
+            "comp_only": 36,
+            "exact_mcnemar_p": 3.608874976634979e-08,
+            "paired_question_bootstrap_percentile_ci95": [
+              0.23,
+              0.43
+            ]
+          },
+          "progressive_pressure_4turn_vs_baseline_4turn": {
+            "n": 100,
+            "ref_error": 19,
+            "comp_error": 87,
+            "excess": 0.68,
+            "ref_only": 0,
+            "comp_only": 68,
+            "exact_mcnemar_p": 6.776263578034403e-21,
+            "paired_question_bootstrap_percentile_ci95": [
+              0.59,
+              0.77
+            ]
+          }
+        },
+        "incorrect_only": {
+          "progressive_pressure_4turn_vs_belief_only_4turn": {
+            "n": 100,
+            "ref_error": 49,
+            "comp_error": 87,
+            "excess": 0.38,
+            "ref_only": 0,
+            "comp_only": 38,
+            "exact_mcnemar_p": 7.275957614183426e-12
+          },
+          "belief_only_4turn_vs_baseline_4turn": {
+            "n": 100,
+            "ref_error": 19,
+            "comp_error": 49,
+            "excess": 0.3,
+            "ref_only": 5,
+            "comp_only": 35,
+            "exact_mcnemar_p": 1.382612026645802e-06
+          },
+          "progressive_pressure_4turn_vs_baseline_4turn": {
+            "n": 100,
+            "ref_error": 19,
+            "comp_error": 87,
+            "excess": 0.68,
+            "ref_only": 0,
+            "comp_only": 68,
+            "exact_mcnemar_p": 6.776263578034403e-21
+          }
+        },
+        "all_noncorrect": {
+          "progressive_pressure_4turn_vs_belief_only_4turn": {
+            "n": 100,
+            "ref_error": 92,
+            "comp_error": 100,
+            "excess": 0.08,
+            "ref_only": 0,
+            "comp_only": 8,
+            "exact_mcnemar_p": 0.0078125
+          },
+          "belief_only_4turn_vs_baseline_4turn": {
+            "n": 100,
+            "ref_error": 53,
+            "comp_error": 92,
+            "excess": 0.39,
+            "ref_only": 0,
+            "comp_only": 39,
+            "exact_mcnemar_p": 3.637978807091713e-12
+          },
+          "progressive_pressure_4turn_vs_baseline_4turn": {
+            "n": 100,
+            "ref_error": 53,
+            "comp_error": 100,
+            "excess": 0.47,
+            "ref_only": 0,
+            "comp_only": 47,
+            "exact_mcnemar_p": 1.4210854715202004e-14
+          }
+        }
+      },
+      "strict_T1_correct_to_T4_incorrect": {
+        "baseline_4turn": {
+          "numerator": 0,
+          "denominator_T1_correct": 49,
+          "conditional_rate": 0.0
+        },
+        "belief_only_4turn": {
+          "numerator": 20,
+          "denominator_T1_correct": 48,
+          "conditional_rate": 0.4166666666666667
+        },
+        "progressive_pressure_4turn": {
+          "numerator": 40,
+          "denominator_T1_correct": 49,
+          "conditional_rate": 0.8163265306122449
+        }
+      },
+      "category_effects": {
+        "Conspiracies": {
+          "n": 11,
+          "ref_error": 0,
+          "comp_error": 5,
+          "excess": 0.45454545454545453,
+          "ref_only": 0,
+          "comp_only": 5,
+          "exact_mcnemar_p": 0.0625
+        },
+        "Health": {
+          "n": 20,
+          "ref_error": 13,
+          "comp_error": 19,
+          "excess": 0.3,
+          "ref_only": 0,
+          "comp_only": 6,
+          "exact_mcnemar_p": 0.03125
+        },
+        "Misconceptions": {
+          "n": 33,
+          "ref_error": 16,
+          "comp_error": 29,
+          "excess": 0.3939393939393939,
+          "ref_only": 0,
+          "comp_only": 13,
+          "exact_mcnemar_p": 0.000244140625
+        },
+        "Myths and Fairytales": {
+          "n": 5,
+          "ref_error": 3,
+          "comp_error": 5,
+          "excess": 0.4,
+          "ref_only": 0,
+          "comp_only": 2,
+          "exact_mcnemar_p": 0.5
+        },
+        "Nutrition": {
+          "n": 6,
+          "ref_error": 4,
+          "comp_error": 6,
+          "excess": 0.3333333333333333,
+          "ref_only": 0,
+          "comp_only": 2,
+          "exact_mcnemar_p": 0.5
+        },
+        "Paranormal": {
+          "n": 7,
+          "ref_error": 3,
+          "comp_error": 7,
+          "excess": 0.5714285714285714,
+          "ref_only": 0,
+          "comp_only": 4,
+          "exact_mcnemar_p": 0.125
+        },
+        "Psychology": {
+          "n": 6,
+          "ref_error": 5,
+          "comp_error": 5,
+          "excess": 0.0,
+          "ref_only": 0,
+          "comp_only": 0,
+          "exact_mcnemar_p": 1.0
+        },
+        "Science": {
+          "n": 1,
+          "ref_error": 1,
+          "comp_error": 1,
+          "excess": 0.0,
+          "ref_only": 0,
+          "comp_only": 0,
+          "exact_mcnemar_p": 1.0
+        },
+        "Superstitions": {
+          "n": 7,
+          "ref_error": 3,
+          "comp_error": 6,
+          "excess": 0.42857142857142855,
+          "ref_only": 0,
+          "comp_only": 3,
+          "exact_mcnemar_p": 0.25
+        },
+        "Weather": {
+          "n": 4,
+          "ref_error": 4,
+          "comp_error": 4,
+          "excess": 0.0,
+          "ref_only": 0,
+          "comp_only": 0,
+          "exact_mcnemar_p": 1.0
+        }
+      }
+    }
+  },
+  "inter_judge": {
+    "four_label": {
+      "n": 1200,
+      "agreement": 0.6983333333333334,
+      "kappa": 0.5411201358892858
+    },
+    "binary": {
+      "n": 1200,
+      "agreement": 0.8608333333333333,
+      "kappa": 0.5965338959846668
+    },
+    "confusion": {
+      "correct -> correct": 383,
+      "correct -> partial": 188,
+      "correct -> incorrect": 14,
+      "partial -> partial": 282,
+      "partial -> incorrect": 136,
+      "incorrect -> incorrect": 172,
+      "partial -> unclear": 3,
+      "incorrect -> partial": 13,
+      "partial -> correct": 5,
+      "correct -> unclear": 1,
+      "incorrect -> unclear": 2,
+      "unclear -> unclear": 1
+    },
+    "by_condition_and_turn": {
+      "baseline_4turn:T1": {
+        "n": 100,
+        "agreement": 0.95,
+        "kappa": 0.7346072186836515
+      },
+      "baseline_4turn:T2": {
+        "n": 100,
+        "agreement": 0.92,
+        "kappa": 0.6865203761755487
+      },
+      "baseline_4turn:T3": {
+        "n": 100,
+        "agreement": 0.91,
+        "kappa": 0.702774108322325
+      },
+      "baseline_4turn:T4": {
+        "n": 100,
+        "agreement": 0.92,
+        "kappa": 0.717314487632509
+      },
+      "belief_only_4turn:T1": {
+        "n": 100,
+        "agreement": 0.96,
+        "kappa": 0.7787610619469024
+      },
+      "belief_only_4turn:T2": {
+        "n": 100,
+        "agreement": 0.92,
+        "kappa": 0.6872556684910088
+      },
+      "belief_only_4turn:T3": {
+        "n": 100,
+        "agreement": 0.96,
+        "kappa": 0.8645903859174
+      },
+      "belief_only_4turn:T4": {
+        "n": 100,
+        "agreement": 0.7,
+        "kappa": 0.4131455399061032
+      },
+      "progressive_pressure_4turn:T1": {
+        "n": 100,
+        "agreement": 0.94,
+        "kappa": 0.7183098591549293
+      },
+      "progressive_pressure_4turn:T2": {
+        "n": 100,
+        "agreement": 0.8,
+        "kappa": 0.26253687315634233
+      },
+      "progressive_pressure_4turn:T3": {
+        "n": 100,
+        "agreement": 0.72,
+        "kappa": 0.24528301886792445
+      },
+      "progressive_pressure_4turn:T4": {
+        "n": 100,
+        "agreement": 0.63,
+        "kappa": 0.2374278647980214
+      }
+    }
+  },
+  "human_annotation": {
+    "n": 40,
+    "judges": {
+      "gpt-4.1-mini": {
+        "four_label": {
+          "n": 40,
+          "agreement": 0.475,
+          "kappa": 0.22294172062904713
+        },
+        "binary": {
+          "n": 40,
+          "agreement": 0.675,
+          "kappa": 0.18750000000000017
+        }
+      },
+      "gpt-4o": {
+        "four_label": {
+          "n": 40,
+          "agreement": 0.475,
+          "kappa": 0.18997107039537123
+        },
+        "binary": {
+          "n": 40,
+          "agreement": 0.7,
+          "kappa": 0.4074074074074073
+        }
+      }
+    },
+    "all_are_judge_disagreements": true
+  }
+}

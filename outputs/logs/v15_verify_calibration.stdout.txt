@@ -1,0 +1,180 @@
+{
+  "integrity_ok": true,
+  "completed": 96,
+  "expected": 96,
+  "analysis": {
+    "passed": true,
+    "real_backend": true,
+    "cells": {
+      "truth/positive_first": {
+        "n": 24,
+        "correct": 24,
+        "wrong": 0,
+        "unknown": 0,
+        "correct_rate": 1.0,
+        "wrong_rate": 0.0,
+        "unknown_rate": 0.0,
+        "per_gold": {
+          "FALSE": {
+            "n": 12,
+            "correct": 12,
+            "wrong": 0,
+            "unknown": 0,
+            "correct_rate": 1.0,
+            "wrong_rate": 0.0,
+            "unknown_rate": 0.0
+          },
+          "TRUE": {
+            "n": 12,
+            "correct": 12,
+            "wrong": 0,
+            "unknown": 0,
+            "correct_rate": 1.0,
+            "wrong_rate": 0.0,
+            "unknown_rate": 0.0
+          }
+        },
+        "passed": true
+      },
+      "truth/negative_first": {
+        "n": 24,
+        "correct": 24,
+        "wrong": 0,
+        "unknown": 0,
+        "correct_rate": 1.0,
+        "wrong_rate": 0.0,
+        "unknown_rate": 0.0,
+        "per_gold": {
+          "FALSE": {
+            "n": 12,
+            "correct": 12,
+            "wrong": 0,
+            "unknown": 0,
+            "correct_rate": 1.0,
+            "wrong_rate": 0.0,
+            "unknown_rate": 0.0
+          },
+          "TRUE": {
+            "n": 12,
+            "correct": 12,
+            "wrong": 0,
+            "unknown": 0,
+            "correct_rate": 1.0,
+            "wrong_rate": 0.0,
+            "unknown_rate": 0.0
+          }
+        },
+        "passed": true
+      },
+      "validity/positive_first": {
+        "n": 24,
+        "correct": 24,
+        "wrong": 0,
+        "unknown": 0,
+        "correct_rate": 1.0,
+        "wrong_rate": 0.0,
+        "unknown_rate": 0.0,
+        "per_gold": {
+          "INVALID": {
+            "n": 12,
+            "correct": 12,
+            "wrong": 0,
+            "unknown": 0,
+            "correct_rate": 1.0,
+            "wrong_rate": 0.0,
+            "unknown_rate": 0.0
+          },
+          "VALID": {
+            "n": 12,
+            "correct": 12,
+            "wrong": 0,
+            "unknown": 0,
+            "correct_rate": 1.0,
+            "wrong_rate": 0.0,
+            "unknown_rate": 0.0
+          }
+        },
+        "passed": true
+      },
+      "validity/negative_first": {
+        "n": 24,
+        "correct": 24,
+        "wrong": 0,
+        "unknown": 0,
+        "correct_rate": 1.0,
+        "wrong_rate": 0.0,
+        "unknown_rate": 0.0,
+        "per_gold": {
+          "INVALID": {
+            "n": 12,
+            "correct": 12,
+            "wrong": 0,
+            "unknown": 0,
+            "correct_rate": 1.0,
+            "wrong_rate": 0.0,
+            "unknown_rate": 0.0
+          },
+          "VALID": {
+            "n": 12,
+            "correct": 12,
+            "wrong": 0,
+            "unknown": 0,
+            "correct_rate": 1.0,
+            "wrong_rate": 0.0,
+            "unknown_rate": 0.0
+          }
+        },
+        "passed": true
+      }
+    },
+    "pairs": {
+      "truth": {
+        "pairs": 24,
+        "unknown_pairs": 0,
+        "order_flips": 0,
+        "passed": true
+      },
+      "validity": {
+        "pairs": 24,
+        "unknown_pairs": 0,
+        "order_flips": 0,
+        "passed": true
+      }
+    },
+    "ability_qualified_items": [
+      "v15_affirming_consequent_0",
+      "v15_affirming_consequent_1",
+      "v15_conjunction_elimination_0",
+      "v15_conjunction_elimination_1",
+      "v15_denying_antecedent_0",
+      "v15_denying_antecedent_1",
+      "v15_disjunction_strengthening_0",
+      "v15_disjunction_strengthening_1",
+      "v15_disjunctive_syllogism_0",
+      "v15_disjunctive_syllogism_1",
+      "v15_modus_ponens_0",
+      "v15_modus_ponens_1",
+      "v15_record_and_0_0",
+      "v15_record_and_0_1",
+      "v15_record_and_1_0",
+      "v15_record_and_1_1",
+      "v15_record_implies_0_0",
+      "v15_record_implies_0_1",
+      "v15_record_implies_1_0",
+      "v15_record_implies_1_1",
+      "v15_record_or_0_0",
+      "v15_record_or_0_1",
+      "v15_record_or_1_0",
+      "v15_record_or_1_1"
+    ],
+    "overall": {
+      "n": 96,
+      "correct": 96,
+      "wrong": 0,
+      "unknown": 0,
+      "correct_rate": 1.0,
+      "wrong_rate": 0.0,
+      "unknown_rate": 0.0
+    }
+  }
+}

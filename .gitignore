@@ -1,0 +1,5 @@
+# Local working area: extracted snapshot, virtualenv, junction layouts (reproducible from inputs/)
+_work/
+__pycache__/
+*.pyc
+.pytest_cache/

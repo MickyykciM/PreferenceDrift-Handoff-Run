@@ -1,0 +1,193 @@
+{
+  "integrity_ok": true,
+  "completed": 512,
+  "expected": 512,
+  "overall": {
+    "n": 512,
+    "correct": 428,
+    "wrong": 84,
+    "unknown": 0,
+    "correct_rate": 0.8359375,
+    "wrong_rate": 0.1640625,
+    "unknown_rate": 0.0
+  },
+  "passed": null,
+  "progression": {
+    "passed": false,
+    "checks": {
+      "all_cells_coverage_ge_95pct": true,
+      "controls_accuracy_ge_875": false,
+      "primary_difference_ge_15pp": true,
+      "primary_unknown_lower_bound_ge_10pp": true,
+      "at_least_three_families_ge_125pp": true
+    },
+    "meaning": "engineering replication trigger, not significance or novelty"
+  },
+  "cells": {
+    "remove/related/complete": {
+      "n": 32,
+      "correct": 0,
+      "wrong": 32,
+      "unknown": 0,
+      "correct_rate": 0.0,
+      "wrong_rate": 1.0,
+      "unknown_rate": 0.0
+    },
+    "remove/related/replace": {
+      "n": 32,
+      "correct": 1,
+      "wrong": 31,
+      "unknown": 0,
+      "correct_rate": 0.03125,
+      "wrong_rate": 0.96875,
+      "unknown_rate": 0.0
+    },
+    "remove/unrelated/complete": {
+      "n": 32,
+      "correct": 28,
+      "wrong": 4,
+      "unknown": 0,
+      "correct_rate": 0.875,
+      "wrong_rate": 0.125,
+      "unknown_rate": 0.0
+    },
+    "remove/unrelated/replace": {
+      "n": 32,
+      "correct": 26,
+      "wrong": 6,
+      "unknown": 0,
+      "correct_rate": 0.8125,
+      "wrong_rate": 0.1875,
+      "unknown_rate": 0.0
+    },
+    "add/related/complete": {
+      "n": 32,
+      "correct": 32,
+      "wrong": 0,
+      "unknown": 0,
+      "correct_rate": 1.0,
+      "wrong_rate": 0.0,
+      "unknown_rate": 0.0
+    },
+    "add/related/replace": {
+      "n": 32,
+      "correct": 32,
+      "wrong": 0,
+      "unknown": 0,
+      "correct_rate": 1.0,
+      "wrong_rate": 0.0,
+      "unknown_rate": 0.0
+    },
+    "add/unrelated/complete": {
+      "n": 32,
+      "correct": 32,
+      "wrong": 0,
+      "unknown": 0,
+      "correct_rate": 1.0,
+      "wrong_rate": 0.0,
+      "unknown_rate": 0.0
+    },
+    "add/unrelated/replace": {
+      "n": 32,
+      "correct": 32,
+      "wrong": 0,
+      "unknown": 0,
+      "correct_rate": 1.0,
+      "wrong_rate": 0.0,
+      "unknown_rate": 0.0
+    },
+    "sham_valid/related/complete": {
+      "n": 32,
+      "correct": 32,
+      "wrong": 0,
+      "unknown": 0,
+      "correct_rate": 1.0,
+      "wrong_rate": 0.0,
+      "unknown_rate": 0.0
+    },
+    "sham_valid/related/replace": {
+      "n": 32,
+      "correct": 32,
+      "wrong": 0,
+      "unknown": 0,
+      "correct_rate": 1.0,
+      "wrong_rate": 0.0,
+      "unknown_rate": 0.0
+    },
+    "sham_valid/unrelated/complete": {
+      "n": 32,
+      "correct": 32,
+      "wrong": 0,
+      "unknown": 0,
+      "correct_rate": 1.0,
+      "wrong_rate": 0.0,
+      "unknown_rate": 0.0
+    },
+    "sham_valid/unrelated/replace": {
+      "n": 32,
+      "correct": 32,
+      "wrong": 0,
+      "unknown": 0,
+      "correct_rate": 1.0,
+      "wrong_rate": 0.0,
+      "unknown_rate": 0.0
+    },
+    "sham_invalid/related/complete": {
+      "n": 32,
+      "correct": 27,
+      "wrong": 5,
+      "unknown": 0,
+      "correct_rate": 0.84375,
+      "wrong_rate": 0.15625,
+      "unknown_rate": 0.0
+    },
+    "sham_invalid/related/replace": {
+      "n": 32,
+      "correct": 28,
+      "wrong": 4,
+      "unknown": 0,
+      "correct_rate": 0.875,
+      "wrong_rate": 0.125,
+      "unknown_rate": 0.0
+    },
+    "sham_invalid/unrelated/complete": {
+      "n": 32,
+      "correct": 32,
+      "wrong": 0,
+      "unknown": 0,
+      "correct_rate": 1.0,
+      "wrong_rate": 0.0,
+      "unknown_rate": 0.0
+    },
+    "sham_invalid/unrelated/replace": {
+      "n": 32,
+      "correct": 30,
+      "wrong": 2,
+      "unknown": 0,
+      "correct_rate": 0.9375,
+      "wrong_rate": 0.0625,
+      "unknown_rate": 0.0
+    }
+  },
+  "primary": {
+    "treatment": "related/replace",
+    "control": "unrelated/replace",
+    "n_items": 8,
+    "n_families": 4,
+    "wrong_difference": 0.78125,
+    "wrong_cluster_bootstrap_95": [
+      0.59375,
+      0.9375
+    ],
+    "noncorrect_difference": 0.78125,
+    "noncorrect_cluster_bootstrap_95": [
+      0.59375,
+      0.9375
+    ],
+    "unknown_assignment_bounds": [
+      0.78125,
+      0.78125
+    ],
+    "caution": "Exploratory very-small-cluster interval; not confirmatory significance."
+  }
+}

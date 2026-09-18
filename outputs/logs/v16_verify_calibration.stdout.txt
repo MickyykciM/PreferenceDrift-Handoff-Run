@@ -1,0 +1,239 @@
+{
+  "integrity_ok": true,
+  "completed": 64,
+  "expected": 64,
+  "overall": {
+    "n": 64,
+    "correct": 64,
+    "wrong": 0,
+    "unknown": 0,
+    "correct_rate": 1.0,
+    "wrong_rate": 0.0,
+    "unknown_rate": 0.0
+  },
+  "passed": true,
+  "progression": null,
+  "cells": {
+    "positive_first/all": {
+      "n": 32,
+      "correct": 32,
+      "wrong": 0,
+      "unknown": 0,
+      "correct_rate": 1.0,
+      "wrong_rate": 0.0,
+      "unknown_rate": 0.0,
+      "passed": true
+    },
+    "positive_first/VALID": {
+      "n": 16,
+      "correct": 16,
+      "wrong": 0,
+      "unknown": 0,
+      "correct_rate": 1.0,
+      "wrong_rate": 0.0,
+      "unknown_rate": 0.0,
+      "passed": true
+    },
+    "positive_first/disjunctive_syllogism/VALID": {
+      "n": 4,
+      "correct": 4,
+      "wrong": 0,
+      "unknown": 0,
+      "correct_rate": 1.0,
+      "wrong_rate": 0.0,
+      "unknown_rate": 0.0,
+      "passed": true
+    },
+    "positive_first/forward_chain/VALID": {
+      "n": 4,
+      "correct": 4,
+      "wrong": 0,
+      "unknown": 0,
+      "correct_rate": 1.0,
+      "wrong_rate": 0.0,
+      "unknown_rate": 0.0,
+      "passed": true
+    },
+    "positive_first/modus_ponens/VALID": {
+      "n": 4,
+      "correct": 4,
+      "wrong": 0,
+      "unknown": 0,
+      "correct_rate": 1.0,
+      "wrong_rate": 0.0,
+      "unknown_rate": 0.0,
+      "passed": true
+    },
+    "positive_first/modus_tollens/VALID": {
+      "n": 4,
+      "correct": 4,
+      "wrong": 0,
+      "unknown": 0,
+      "correct_rate": 1.0,
+      "wrong_rate": 0.0,
+      "unknown_rate": 0.0,
+      "passed": true
+    },
+    "positive_first/INVALID": {
+      "n": 16,
+      "correct": 16,
+      "wrong": 0,
+      "unknown": 0,
+      "correct_rate": 1.0,
+      "wrong_rate": 0.0,
+      "unknown_rate": 0.0,
+      "passed": true
+    },
+    "positive_first/disjunctive_syllogism/INVALID": {
+      "n": 4,
+      "correct": 4,
+      "wrong": 0,
+      "unknown": 0,
+      "correct_rate": 1.0,
+      "wrong_rate": 0.0,
+      "unknown_rate": 0.0,
+      "passed": true
+    },
+    "positive_first/forward_chain/INVALID": {
+      "n": 4,
+      "correct": 4,
+      "wrong": 0,
+      "unknown": 0,
+      "correct_rate": 1.0,
+      "wrong_rate": 0.0,
+      "unknown_rate": 0.0,
+      "passed": true
+    },
+    "positive_first/modus_ponens/INVALID": {
+      "n": 4,
+      "correct": 4,
+      "wrong": 0,
+      "unknown": 0,
+      "correct_rate": 1.0,
+      "wrong_rate": 0.0,
+      "unknown_rate": 0.0,
+      "passed": true
+    },
+    "positive_first/modus_tollens/INVALID": {
+      "n": 4,
+      "correct": 4,
+      "wrong": 0,
+      "unknown": 0,
+      "correct_rate": 1.0,
+      "wrong_rate": 0.0,
+      "unknown_rate": 0.0,
+      "passed": true
+    },
+    "negative_first/all": {
+      "n": 32,
+      "correct": 32,
+      "wrong": 0,
+      "unknown": 0,
+      "correct_rate": 1.0,
+      "wrong_rate": 0.0,
+      "unknown_rate": 0.0,
+      "passed": true
+    },
+    "negative_first/VALID": {
+      "n": 16,
+      "correct": 16,
+      "wrong": 0,
+      "unknown": 0,
+      "correct_rate": 1.0,
+      "wrong_rate": 0.0,
+      "unknown_rate": 0.0,
+      "passed": true
+    },
+    "negative_first/disjunctive_syllogism/VALID": {
+      "n": 4,
+      "correct": 4,
+      "wrong": 0,
+      "unknown": 0,
+      "correct_rate": 1.0,
+      "wrong_rate": 0.0,
+      "unknown_rate": 0.0,
+      "passed": true
+    },
+    "negative_first/forward_chain/VALID": {
+      "n": 4,
+      "correct": 4,
+      "wrong": 0,
+      "unknown": 0,
+      "correct_rate": 1.0,
+      "wrong_rate": 0.0,
+      "unknown_rate": 0.0,
+      "passed": true
+    },
+    "negative_first/modus_ponens/VALID": {
+      "n": 4,
+      "correct": 4,
+      "wrong": 0,
+      "unknown": 0,
+      "correct_rate": 1.0,
+      "wrong_rate": 0.0,
+      "unknown_rate": 0.0,
+      "passed": true
+    },
+    "negative_first/modus_tollens/VALID": {
+      "n": 4,
+      "correct": 4,
+      "wrong": 0,
+      "unknown": 0,
+      "correct_rate": 1.0,
+      "wrong_rate": 0.0,
+      "unknown_rate": 0.0,
+      "passed": true
+    },
+    "negative_first/INVALID": {
+      "n": 16,
+      "correct": 16,
+      "wrong": 0,
+      "unknown": 0,
+      "correct_rate": 1.0,
+      "wrong_rate": 0.0,
+      "unknown_rate": 0.0,
+      "passed": true
+    },
+    "negative_first/disjunctive_syllogism/INVALID": {
+      "n": 4,
+      "correct": 4,
+      "wrong": 0,
+      "unknown": 0,
+      "correct_rate": 1.0,
+      "wrong_rate": 0.0,
+      "unknown_rate": 0.0,
+      "passed": true
+    },
+    "negative_first/forward_chain/INVALID": {
+      "n": 4,
+      "correct": 4,
+      "wrong": 0,
+      "unknown": 0,
+      "correct_rate": 1.0,
+      "wrong_rate": 0.0,
+      "unknown_rate": 0.0,
+      "passed": true
+    },
+    "negative_first/modus_ponens/INVALID": {
+      "n": 4,
+      "correct": 4,
+      "wrong": 0,
+      "unknown": 0,
+      "correct_rate": 1.0,
+      "wrong_rate": 0.0,
+      "unknown_rate": 0.0,
+      "passed": true
+    },
+    "negative_first/modus_tollens/INVALID": {
+      "n": 4,
+      "correct": 4,
+      "wrong": 0,
+      "unknown": 0,
+      "correct_rate": 1.0,
+      "wrong_rate": 0.0,
+      "unknown_rate": 0.0,
+      "passed": true
+    }
+  },
+  "primary": {}
+}

@@ -1,0 +1,2205 @@
+{
+  "integrity_ok": true,
+  "plan_sha256": "0e3b615b16061459141d89392770cd47c0ab97c5b7a2bf21bc8e9a000835adc6",
+  "audit_source_sha256": "c480ef40b83baebed8ce18de04c77e6df7ab7806c3d813863e97af1914d67561",
+  "new_local_generations": 672,
+  "unique_generation_seeds": 672,
+  "raw_sha256": {
+    "calibration": "2c7f4ecf81763c3efe90e2fb5fb8ba564e15df53541c9ec7f2a2c15c0cb4bb91",
+    "study": "acc2139e45005868e3c5f74bc4b087b4df39fa2dae5fd8203771115cbf35aa3e",
+    "updated_standalone": "d3eeb77f659d6296257182c270c1e5decb61b0f57c13c968b2d16936e223330d"
+  },
+  "verified_zero_call_resumes": {
+    "calibration": 0,
+    "study": 0,
+    "updated_standalone": 0
+  },
+  "tests": {
+    "original": {
+      "tests": 276,
+      "report_sha256": "53b70542c3c692d4527e50d939ba378b5c689cbe69f1aa38f48f24cecc775f53"
+    },
+    "mlx": {
+      "tests": 276,
+      "report_sha256": "28ffc98a1a10e2626e02d9e0a4f5e1226ea6347b09acbc5a2769efef3439812e"
+    }
+  },
+  "generation": {
+    "calibration": {
+      "requests": 96,
+      "unknown": 0,
+      "finish_reasons": {
+        "eos": 96
+      },
+      "backend_errors": 0,
+      "generation_elapsed_seconds_sum": 302.86405387340346,
+      "max_peak_memory_gb": 4.73615743
+    },
+    "study": {
+      "requests": 480,
+      "unknown": 0,
+      "finish_reasons": {
+        "eos": 480
+      },
+      "backend_errors": 0,
+      "generation_elapsed_seconds_sum": 1882.6457957683015,
+      "max_peak_memory_gb": 4.76866581
+    },
+    "updated_standalone": {
+      "requests": 96,
+      "unknown": 0,
+      "finish_reasons": {
+        "eos": 96
+      },
+      "backend_errors": 0,
+      "generation_elapsed_seconds_sum": 344.82651491375873,
+      "max_peak_memory_gb": 4.73615743
+    }
+  },
+  "stochastic_text_diversity": {
+    "calibration": {
+      "prefixes": 48,
+      "two_different_texts": 45
+    },
+    "study": {
+      "prefixes": 240,
+      "two_different_texts": 213
+    },
+    "updated_standalone": {
+      "prefixes": 48,
+      "two_different_texts": 44
+    }
+  },
+  "preference_minus_repetition_input_tokens": {
+    "0": 96
+  },
+  "missing_input_token_pairs": 0,
+  "calibration": {
+    "passed": true,
+    "real_backend": true,
+    "cells": {
+      "truth/positive_first": {
+        "n": 24,
+        "correct": 24,
+        "wrong": 0,
+        "unknown": 0,
+        "correct_rate": 1.0,
+        "wrong_rate": 0.0,
+        "unknown_rate": 0.0,
+        "per_gold": {
+          "FALSE": {
+            "n": 12,
+            "correct": 12,
+            "wrong": 0,
+            "unknown": 0,
+            "correct_rate": 1.0,
+            "wrong_rate": 0.0,
+            "unknown_rate": 0.0
+          },
+          "TRUE": {
+            "n": 12,
+            "correct": 12,
+            "wrong": 0,
+            "unknown": 0,
+            "correct_rate": 1.0,
+            "wrong_rate": 0.0,
+            "unknown_rate": 0.0
+          }
+        },
+        "passed": true
+      },
+      "truth/negative_first": {
+        "n": 24,
+        "correct": 24,
+        "wrong": 0,
+        "unknown": 0,
+        "correct_rate": 1.0,
+        "wrong_rate": 0.0,
+        "unknown_rate": 0.0,
+        "per_gold": {
+          "FALSE": {
+            "n": 12,
+            "correct": 12,
+            "wrong": 0,
+            "unknown": 0,
+            "correct_rate": 1.0,
+            "wrong_rate": 0.0,
+            "unknown_rate": 0.0
+          },
+          "TRUE": {
+            "n": 12,
+            "correct": 12,
+            "wrong": 0,
+            "unknown": 0,
+            "correct_rate": 1.0,
+            "wrong_rate": 0.0,
+            "unknown_rate": 0.0
+          }
+        },
+        "passed": true
+      },
+      "validity/positive_first": {
+        "n": 24,
+        "correct": 24,
+        "wrong": 0,
+        "unknown": 0,
+        "correct_rate": 1.0,
+        "wrong_rate": 0.0,
+        "unknown_rate": 0.0,
+        "per_gold": {
+          "INVALID": {
+            "n": 12,
+            "correct": 12,
+            "wrong": 0,
+            "unknown": 0,
+            "correct_rate": 1.0,
+            "wrong_rate": 0.0,
+            "unknown_rate": 0.0
+          },
+          "VALID": {
+            "n": 12,
+            "correct": 12,
+            "wrong": 0,
+            "unknown": 0,
+            "correct_rate": 1.0,
+            "wrong_rate": 0.0,
+            "unknown_rate": 0.0
+          }
+        },
+        "passed": true
+      },
+      "validity/negative_first": {
+        "n": 24,
+        "correct": 24,
+        "wrong": 0,
+        "unknown": 0,
+        "correct_rate": 1.0,
+        "wrong_rate": 0.0,
+        "unknown_rate": 0.0,
+        "per_gold": {
+          "INVALID": {
+            "n": 12,
+            "correct": 12,
+            "wrong": 0,
+            "unknown": 0,
+            "correct_rate": 1.0,
+            "wrong_rate": 0.0,
+            "unknown_rate": 0.0
+          },
+          "VALID": {
+            "n": 12,
+            "correct": 12,
+            "wrong": 0,
+            "unknown": 0,
+            "correct_rate": 1.0,
+            "wrong_rate": 0.0,
+            "unknown_rate": 0.0
+          }
+        },
+        "passed": true
+      }
+    },
+    "pairs": {
+      "truth": {
+        "pairs": 24,
+        "unknown_pairs": 0,
+        "order_flips": 0,
+        "passed": true
+      },
+      "validity": {
+        "pairs": 24,
+        "unknown_pairs": 0,
+        "order_flips": 0,
+        "passed": true
+      }
+    },
+    "ability_qualified_items": [
+      "v15_affirming_consequent_0",
+      "v15_affirming_consequent_1",
+      "v15_conjunction_elimination_0",
+      "v15_conjunction_elimination_1",
+      "v15_denying_antecedent_0",
+      "v15_denying_antecedent_1",
+      "v15_disjunction_strengthening_0",
+      "v15_disjunction_strengthening_1",
+      "v15_disjunctive_syllogism_0",
+      "v15_disjunctive_syllogism_1",
+      "v15_modus_ponens_0",
+      "v15_modus_ponens_1",
+      "v15_record_and_0_0",
+      "v15_record_and_0_1",
+      "v15_record_and_1_0",
+      "v15_record_and_1_1",
+      "v15_record_implies_0_0",
+      "v15_record_implies_0_1",
+      "v15_record_implies_1_0",
+      "v15_record_implies_1_1",
+      "v15_record_or_0_0",
+      "v15_record_or_0_1",
+      "v15_record_or_1_0",
+      "v15_record_or_1_1"
+    ],
+    "overall": {
+      "n": 96,
+      "correct": 96,
+      "wrong": 0,
+      "unknown": 0,
+      "correct_rate": 1.0,
+      "wrong_rate": 0.0,
+      "unknown_rate": 0.0
+    }
+  },
+  "study": {
+    "arms": {
+      "neutral": {
+        "n": 96,
+        "correct": 96,
+        "wrong": 0,
+        "unknown": 0,
+        "correct_rate": 1.0,
+        "wrong_rate": 0.0,
+        "unknown_rate": 0.0
+      },
+      "last_only": {
+        "n": 96,
+        "correct": 96,
+        "wrong": 0,
+        "unknown": 0,
+        "correct_rate": 1.0,
+        "wrong_rate": 0.0,
+        "unknown_rate": 0.0
+      },
+      "repetition": {
+        "n": 96,
+        "correct": 95,
+        "wrong": 1,
+        "unknown": 0,
+        "correct_rate": 0.9895833333333334,
+        "wrong_rate": 0.010416666666666666,
+        "unknown_rate": 0.0
+      },
+      "preference": {
+        "n": 96,
+        "correct": 96,
+        "wrong": 0,
+        "unknown": 0,
+        "correct_rate": 1.0,
+        "wrong_rate": 0.0,
+        "unknown_rate": 0.0
+      },
+      "valid_update": {
+        "n": 96,
+        "correct": 80,
+        "wrong": 16,
+        "unknown": 0,
+        "correct_rate": 0.8333333333333334,
+        "wrong_rate": 0.16666666666666666,
+        "unknown_rate": 0.0
+      }
+    },
+    "strata": {
+      "axis": {
+        "truth": {
+          "neutral": {
+            "n": 48,
+            "correct": 48,
+            "wrong": 0,
+            "unknown": 0,
+            "correct_rate": 1.0,
+            "wrong_rate": 0.0,
+            "unknown_rate": 0.0
+          },
+          "last_only": {
+            "n": 48,
+            "correct": 48,
+            "wrong": 0,
+            "unknown": 0,
+            "correct_rate": 1.0,
+            "wrong_rate": 0.0,
+            "unknown_rate": 0.0
+          },
+          "repetition": {
+            "n": 48,
+            "correct": 48,
+            "wrong": 0,
+            "unknown": 0,
+            "correct_rate": 1.0,
+            "wrong_rate": 0.0,
+            "unknown_rate": 0.0
+          },
+          "preference": {
+            "n": 48,
+            "correct": 48,
+            "wrong": 0,
+            "unknown": 0,
+            "correct_rate": 1.0,
+            "wrong_rate": 0.0,
+            "unknown_rate": 0.0
+          },
+          "valid_update": {
+            "n": 48,
+            "correct": 48,
+            "wrong": 0,
+            "unknown": 0,
+            "correct_rate": 1.0,
+            "wrong_rate": 0.0,
+            "unknown_rate": 0.0
+          }
+        },
+        "validity": {
+          "neutral": {
+            "n": 48,
+            "correct": 48,
+            "wrong": 0,
+            "unknown": 0,
+            "correct_rate": 1.0,
+            "wrong_rate": 0.0,
+            "unknown_rate": 0.0
+          },
+          "last_only": {
+            "n": 48,
+            "correct": 48,
+            "wrong": 0,
+            "unknown": 0,
+            "correct_rate": 1.0,
+            "wrong_rate": 0.0,
+            "unknown_rate": 0.0
+          },
+          "repetition": {
+            "n": 48,
+            "correct": 47,
+            "wrong": 1,
+            "unknown": 0,
+            "correct_rate": 0.9791666666666666,
+            "wrong_rate": 0.020833333333333332,
+            "unknown_rate": 0.0
+          },
+          "preference": {
+            "n": 48,
+            "correct": 48,
+            "wrong": 0,
+            "unknown": 0,
+            "correct_rate": 1.0,
+            "wrong_rate": 0.0,
+            "unknown_rate": 0.0
+          },
+          "valid_update": {
+            "n": 48,
+            "correct": 32,
+            "wrong": 16,
+            "unknown": 0,
+            "correct_rate": 0.6666666666666666,
+            "wrong_rate": 0.3333333333333333,
+            "unknown_rate": 0.0
+          }
+        }
+      },
+      "target": {
+        "NO": {
+          "neutral": {
+            "n": 48,
+            "correct": 48,
+            "wrong": 0,
+            "unknown": 0,
+            "correct_rate": 1.0,
+            "wrong_rate": 0.0,
+            "unknown_rate": 0.0
+          },
+          "last_only": {
+            "n": 48,
+            "correct": 48,
+            "wrong": 0,
+            "unknown": 0,
+            "correct_rate": 1.0,
+            "wrong_rate": 0.0,
+            "unknown_rate": 0.0
+          },
+          "repetition": {
+            "n": 48,
+            "correct": 48,
+            "wrong": 0,
+            "unknown": 0,
+            "correct_rate": 1.0,
+            "wrong_rate": 0.0,
+            "unknown_rate": 0.0
+          },
+          "preference": {
+            "n": 48,
+            "correct": 48,
+            "wrong": 0,
+            "unknown": 0,
+            "correct_rate": 1.0,
+            "wrong_rate": 0.0,
+            "unknown_rate": 0.0
+          },
+          "valid_update": {
+            "n": 48,
+            "correct": 32,
+            "wrong": 16,
+            "unknown": 0,
+            "correct_rate": 0.6666666666666666,
+            "wrong_rate": 0.3333333333333333,
+            "unknown_rate": 0.0
+          }
+        },
+        "YES": {
+          "neutral": {
+            "n": 48,
+            "correct": 48,
+            "wrong": 0,
+            "unknown": 0,
+            "correct_rate": 1.0,
+            "wrong_rate": 0.0,
+            "unknown_rate": 0.0
+          },
+          "last_only": {
+            "n": 48,
+            "correct": 48,
+            "wrong": 0,
+            "unknown": 0,
+            "correct_rate": 1.0,
+            "wrong_rate": 0.0,
+            "unknown_rate": 0.0
+          },
+          "repetition": {
+            "n": 48,
+            "correct": 47,
+            "wrong": 1,
+            "unknown": 0,
+            "correct_rate": 0.9791666666666666,
+            "wrong_rate": 0.020833333333333332,
+            "unknown_rate": 0.0
+          },
+          "preference": {
+            "n": 48,
+            "correct": 48,
+            "wrong": 0,
+            "unknown": 0,
+            "correct_rate": 1.0,
+            "wrong_rate": 0.0,
+            "unknown_rate": 0.0
+          },
+          "valid_update": {
+            "n": 48,
+            "correct": 48,
+            "wrong": 0,
+            "unknown": 0,
+            "correct_rate": 1.0,
+            "wrong_rate": 0.0,
+            "unknown_rate": 0.0
+          }
+        }
+      },
+      "option_order": {
+        "negative_first": {
+          "neutral": {
+            "n": 48,
+            "correct": 48,
+            "wrong": 0,
+            "unknown": 0,
+            "correct_rate": 1.0,
+            "wrong_rate": 0.0,
+            "unknown_rate": 0.0
+          },
+          "last_only": {
+            "n": 48,
+            "correct": 48,
+            "wrong": 0,
+            "unknown": 0,
+            "correct_rate": 1.0,
+            "wrong_rate": 0.0,
+            "unknown_rate": 0.0
+          },
+          "repetition": {
+            "n": 48,
+            "correct": 47,
+            "wrong": 1,
+            "unknown": 0,
+            "correct_rate": 0.9791666666666666,
+            "wrong_rate": 0.020833333333333332,
+            "unknown_rate": 0.0
+          },
+          "preference": {
+            "n": 48,
+            "correct": 48,
+            "wrong": 0,
+            "unknown": 0,
+            "correct_rate": 1.0,
+            "wrong_rate": 0.0,
+            "unknown_rate": 0.0
+          },
+          "valid_update": {
+            "n": 48,
+            "correct": 40,
+            "wrong": 8,
+            "unknown": 0,
+            "correct_rate": 0.8333333333333334,
+            "wrong_rate": 0.16666666666666666,
+            "unknown_rate": 0.0
+          }
+        },
+        "positive_first": {
+          "neutral": {
+            "n": 48,
+            "correct": 48,
+            "wrong": 0,
+            "unknown": 0,
+            "correct_rate": 1.0,
+            "wrong_rate": 0.0,
+            "unknown_rate": 0.0
+          },
+          "last_only": {
+            "n": 48,
+            "correct": 48,
+            "wrong": 0,
+            "unknown": 0,
+            "correct_rate": 1.0,
+            "wrong_rate": 0.0,
+            "unknown_rate": 0.0
+          },
+          "repetition": {
+            "n": 48,
+            "correct": 48,
+            "wrong": 0,
+            "unknown": 0,
+            "correct_rate": 1.0,
+            "wrong_rate": 0.0,
+            "unknown_rate": 0.0
+          },
+          "preference": {
+            "n": 48,
+            "correct": 48,
+            "wrong": 0,
+            "unknown": 0,
+            "correct_rate": 1.0,
+            "wrong_rate": 0.0,
+            "unknown_rate": 0.0
+          },
+          "valid_update": {
+            "n": 48,
+            "correct": 40,
+            "wrong": 8,
+            "unknown": 0,
+            "correct_rate": 0.8333333333333334,
+            "wrong_rate": 0.16666666666666666,
+            "unknown_rate": 0.0
+          }
+        }
+      }
+    },
+    "primary": {
+      "treatment": "preference",
+      "control": "repetition",
+      "n_items": 24,
+      "n_families": 9,
+      "wrong_difference": -0.010416666666666666,
+      "wrong_cluster_bootstrap_95": [
+        -0.0375,
+        0.0
+      ],
+      "noncorrect_difference": -0.010416666666666666,
+      "noncorrect_cluster_bootstrap_95": [
+        -0.0375,
+        0.0
+      ],
+      "unknown_assignment_bounds": [
+        -0.010416666666666666,
+        -0.010416666666666666
+      ],
+      "item_differences": [
+        {
+          "item_id": "v15_affirming_consequent_0",
+          "family": "affirming_consequent",
+          "wrong": 0.0,
+          "noncorrect": 0.0,
+          "unknown_bound_low": 0.0,
+          "unknown_bound_high": 0.0
+        },
+        {
+          "item_id": "v15_affirming_consequent_1",
+          "family": "affirming_consequent",
+          "wrong": 0.0,
+          "noncorrect": 0.0,
+          "unknown_bound_low": 0.0,
+          "unknown_bound_high": 0.0
+        },
+        {
+          "item_id": "v15_conjunction_elimination_0",
+          "family": "conjunction_elimination",
+          "wrong": 0.0,
+          "noncorrect": 0.0,
+          "unknown_bound_low": 0.0,
+          "unknown_bound_high": 0.0
+        },
+        {
+          "item_id": "v15_conjunction_elimination_1",
+          "family": "conjunction_elimination",
+          "wrong": 0.0,
+          "noncorrect": 0.0,
+          "unknown_bound_low": 0.0,
+          "unknown_bound_high": 0.0
+        },
+        {
+          "item_id": "v15_denying_antecedent_0",
+          "family": "denying_antecedent",
+          "wrong": -0.25,
+          "noncorrect": -0.25,
+          "unknown_bound_low": -0.25,
+          "unknown_bound_high": -0.25
+        },
+        {
+          "item_id": "v15_denying_antecedent_1",
+          "family": "denying_antecedent",
+          "wrong": 0.0,
+          "noncorrect": 0.0,
+          "unknown_bound_low": 0.0,
+          "unknown_bound_high": 0.0
+        },
+        {
+          "item_id": "v15_disjunction_strengthening_0",
+          "family": "disjunction_strengthening",
+          "wrong": 0.0,
+          "noncorrect": 0.0,
+          "unknown_bound_low": 0.0,
+          "unknown_bound_high": 0.0
+        },
+        {
+          "item_id": "v15_disjunction_strengthening_1",
+          "family": "disjunction_strengthening",
+          "wrong": 0.0,
+          "noncorrect": 0.0,
+          "unknown_bound_low": 0.0,
+          "unknown_bound_high": 0.0
+        },
+        {
+          "item_id": "v15_disjunctive_syllogism_0",
+          "family": "disjunctive_syllogism",
+          "wrong": 0.0,
+          "noncorrect": 0.0,
+          "unknown_bound_low": 0.0,
+          "unknown_bound_high": 0.0
+        },
+        {
+          "item_id": "v15_disjunctive_syllogism_1",
+          "family": "disjunctive_syllogism",
+          "wrong": 0.0,
+          "noncorrect": 0.0,
+          "unknown_bound_low": 0.0,
+          "unknown_bound_high": 0.0
+        },
+        {
+          "item_id": "v15_modus_ponens_0",
+          "family": "modus_ponens",
+          "wrong": 0.0,
+          "noncorrect": 0.0,
+          "unknown_bound_low": 0.0,
+          "unknown_bound_high": 0.0
+        },
+        {
+          "item_id": "v15_modus_ponens_1",
+          "family": "modus_ponens",
+          "wrong": 0.0,
+          "noncorrect": 0.0,
+          "unknown_bound_low": 0.0,
+          "unknown_bound_high": 0.0
+        },
+        {
+          "item_id": "v15_record_and_0_0",
+          "family": "record_and",
+          "wrong": 0.0,
+          "noncorrect": 0.0,
+          "unknown_bound_low": 0.0,
+          "unknown_bound_high": 0.0
+        },
+        {
+          "item_id": "v15_record_and_0_1",
+          "family": "record_and",
+          "wrong": 0.0,
+          "noncorrect": 0.0,
+          "unknown_bound_low": 0.0,
+          "unknown_bound_high": 0.0
+        },
+        {
+          "item_id": "v15_record_and_1_0",
+          "family": "record_and",
+          "wrong": 0.0,
+          "noncorrect": 0.0,
+          "unknown_bound_low": 0.0,
+          "unknown_bound_high": 0.0
+        },
+        {
+          "item_id": "v15_record_and_1_1",
+          "family": "record_and",
+          "wrong": 0.0,
+          "noncorrect": 0.0,
+          "unknown_bound_low": 0.0,
+          "unknown_bound_high": 0.0
+        },
+        {
+          "item_id": "v15_record_implies_0_0",
+          "family": "record_implies",
+          "wrong": 0.0,
+          "noncorrect": 0.0,
+          "unknown_bound_low": 0.0,
+          "unknown_bound_high": 0.0
+        },
+        {
+          "item_id": "v15_record_implies_0_1",
+          "family": "record_implies",
+          "wrong": 0.0,
+          "noncorrect": 0.0,
+          "unknown_bound_low": 0.0,
+          "unknown_bound_high": 0.0
+        },
+        {
+          "item_id": "v15_record_implies_1_0",
+          "family": "record_implies",
+          "wrong": 0.0,
+          "noncorrect": 0.0,
+          "unknown_bound_low": 0.0,
+          "unknown_bound_high": 0.0
+        },
+        {
+          "item_id": "v15_record_implies_1_1",
+          "family": "record_implies",
+          "wrong": 0.0,
+          "noncorrect": 0.0,
+          "unknown_bound_low": 0.0,
+          "unknown_bound_high": 0.0
+        },
+        {
+          "item_id": "v15_record_or_0_0",
+          "family": "record_or",
+          "wrong": 0.0,
+          "noncorrect": 0.0,
+          "unknown_bound_low": 0.0,
+          "unknown_bound_high": 0.0
+        },
+        {
+          "item_id": "v15_record_or_0_1",
+          "family": "record_or",
+          "wrong": 0.0,
+          "noncorrect": 0.0,
+          "unknown_bound_low": 0.0,
+          "unknown_bound_high": 0.0
+        },
+        {
+          "item_id": "v15_record_or_1_0",
+          "family": "record_or",
+          "wrong": 0.0,
+          "noncorrect": 0.0,
+          "unknown_bound_low": 0.0,
+          "unknown_bound_high": 0.0
+        },
+        {
+          "item_id": "v15_record_or_1_1",
+          "family": "record_or",
+          "wrong": 0.0,
+          "noncorrect": 0.0,
+          "unknown_bound_low": 0.0,
+          "unknown_bound_high": 0.0
+        }
+      ],
+      "caution": "Exploratory very-small-cluster interval; not confirmatory significance."
+    },
+    "secondary": {
+      "last_only_minus_neutral": {
+        "treatment": "last_only",
+        "control": "neutral",
+        "n_items": 24,
+        "n_families": 9,
+        "wrong_difference": 0.0,
+        "wrong_cluster_bootstrap_95": [
+          0.0,
+          0.0
+        ],
+        "noncorrect_difference": 0.0,
+        "noncorrect_cluster_bootstrap_95": [
+          0.0,
+          0.0
+        ],
+        "unknown_assignment_bounds": [
+          0.0,
+          0.0
+        ],
+        "item_differences": [
+          {
+            "item_id": "v15_affirming_consequent_0",
+            "family": "affirming_consequent",
+            "wrong": 0.0,
+            "noncorrect": 0.0,
+            "unknown_bound_low": 0.0,
+            "unknown_bound_high": 0.0
+          },
+          {
+            "item_id": "v15_affirming_consequent_1",
+            "family": "affirming_consequent",
+            "wrong": 0.0,
+            "noncorrect": 0.0,
+            "unknown_bound_low": 0.0,
+            "unknown_bound_high": 0.0
+          },
+          {
+            "item_id": "v15_conjunction_elimination_0",
+            "family": "conjunction_elimination",
+            "wrong": 0.0,
+            "noncorrect": 0.0,
+            "unknown_bound_low": 0.0,
+            "unknown_bound_high": 0.0
+          },
+          {
+            "item_id": "v15_conjunction_elimination_1",
+            "family": "conjunction_elimination",
+            "wrong": 0.0,
+            "noncorrect": 0.0,
+            "unknown_bound_low": 0.0,
+            "unknown_bound_high": 0.0
+          },
+          {
+            "item_id": "v15_denying_antecedent_0",
+            "family": "denying_antecedent",
+            "wrong": 0.0,
+            "noncorrect": 0.0,
+            "unknown_bound_low": 0.0,
+            "unknown_bound_high": 0.0
+          },
+          {
+            "item_id": "v15_denying_antecedent_1",
+            "family": "denying_antecedent",
+            "wrong": 0.0,
+            "noncorrect": 0.0,
+            "unknown_bound_low": 0.0,
+            "unknown_bound_high": 0.0
+          },
+          {
+            "item_id": "v15_disjunction_strengthening_0",
+            "family": "disjunction_strengthening",
+            "wrong": 0.0,
+            "noncorrect": 0.0,
+            "unknown_bound_low": 0.0,
+            "unknown_bound_high": 0.0
+          },
+          {
+            "item_id": "v15_disjunction_strengthening_1",
+            "family": "disjunction_strengthening",
+            "wrong": 0.0,
+            "noncorrect": 0.0,
+            "unknown_bound_low": 0.0,
+            "unknown_bound_high": 0.0
+          },
+          {
+            "item_id": "v15_disjunctive_syllogism_0",
+            "family": "disjunctive_syllogism",
+            "wrong": 0.0,
+            "noncorrect": 0.0,
+            "unknown_bound_low": 0.0,
+            "unknown_bound_high": 0.0
+          },
+          {
+            "item_id": "v15_disjunctive_syllogism_1",
+            "family": "disjunctive_syllogism",
+            "wrong": 0.0,
+            "noncorrect": 0.0,
+            "unknown_bound_low": 0.0,
+            "unknown_bound_high": 0.0
+          },
+          {
+            "item_id": "v15_modus_ponens_0",
+            "family": "modus_ponens",
+            "wrong": 0.0,
+            "noncorrect": 0.0,
+            "unknown_bound_low": 0.0,
+            "unknown_bound_high": 0.0
+          },
+          {
+            "item_id": "v15_modus_ponens_1",
+            "family": "modus_ponens",
+            "wrong": 0.0,
+            "noncorrect": 0.0,
+            "unknown_bound_low": 0.0,
+            "unknown_bound_high": 0.0
+          },
+          {
+            "item_id": "v15_record_and_0_0",
+            "family": "record_and",
+            "wrong": 0.0,
+            "noncorrect": 0.0,
+            "unknown_bound_low": 0.0,
+            "unknown_bound_high": 0.0
+          },
+          {
+            "item_id": "v15_record_and_0_1",
+            "family": "record_and",
+            "wrong": 0.0,
+            "noncorrect": 0.0,
+            "unknown_bound_low": 0.0,
+            "unknown_bound_high": 0.0
+          },
+          {
+            "item_id": "v15_record_and_1_0",
+            "family": "record_and",
+            "wrong": 0.0,
+            "noncorrect": 0.0,
+            "unknown_bound_low": 0.0,
+            "unknown_bound_high": 0.0
+          },
+          {
+            "item_id": "v15_record_and_1_1",
+            "family": "record_and",
+            "wrong": 0.0,
+            "noncorrect": 0.0,
+            "unknown_bound_low": 0.0,
+            "unknown_bound_high": 0.0
+          },
+          {
+            "item_id": "v15_record_implies_0_0",
+            "family": "record_implies",
+            "wrong": 0.0,
+            "noncorrect": 0.0,
+            "unknown_bound_low": 0.0,
+            "unknown_bound_high": 0.0
+          },
+          {
+            "item_id": "v15_record_implies_0_1",
+            "family": "record_implies",
+            "wrong": 0.0,
+            "noncorrect": 0.0,
+            "unknown_bound_low": 0.0,
+            "unknown_bound_high": 0.0
+          },
+          {
+            "item_id": "v15_record_implies_1_0",
+            "family": "record_implies",
+            "wrong": 0.0,
+            "noncorrect": 0.0,
+            "unknown_bound_low": 0.0,
+            "unknown_bound_high": 0.0
+          },
+          {
+            "item_id": "v15_record_implies_1_1",
+            "family": "record_implies",
+            "wrong": 0.0,
+            "noncorrect": 0.0,
+            "unknown_bound_low": 0.0,
+            "unknown_bound_high": 0.0
+          },
+          {
+            "item_id": "v15_record_or_0_0",
+            "family": "record_or",
+            "wrong": 0.0,
+            "noncorrect": 0.0,
+            "unknown_bound_low": 0.0,
+            "unknown_bound_high": 0.0
+          },
+          {
+            "item_id": "v15_record_or_0_1",
+            "family": "record_or",
+            "wrong": 0.0,
+            "noncorrect": 0.0,
+            "unknown_bound_low": 0.0,
+            "unknown_bound_high": 0.0
+          },
+          {
+            "item_id": "v15_record_or_1_0",
+            "family": "record_or",
+            "wrong": 0.0,
+            "noncorrect": 0.0,
+            "unknown_bound_low": 0.0,
+            "unknown_bound_high": 0.0
+          },
+          {
+            "item_id": "v15_record_or_1_1",
+            "family": "record_or",
+            "wrong": 0.0,
+            "noncorrect": 0.0,
+            "unknown_bound_low": 0.0,
+            "unknown_bound_high": 0.0
+          }
+        ],
+        "caution": "Exploratory very-small-cluster interval; not confirmatory significance."
+      },
+      "preference_minus_last_only": {
+        "treatment": "preference",
+        "control": "last_only",
+        "n_items": 24,
+        "n_families": 9,
+        "wrong_difference": 0.0,
+        "wrong_cluster_bootstrap_95": [
+          0.0,
+          0.0
+        ],
+        "noncorrect_difference": 0.0,
+        "noncorrect_cluster_bootstrap_95": [
+          0.0,
+          0.0
+        ],
+        "unknown_assignment_bounds": [
+          0.0,
+          0.0
+        ],
+        "item_differences": [
+          {
+            "item_id": "v15_affirming_consequent_0",
+            "family": "affirming_consequent",
+            "wrong": 0.0,
+            "noncorrect": 0.0,
+            "unknown_bound_low": 0.0,
+            "unknown_bound_high": 0.0
+          },
+          {
+            "item_id": "v15_affirming_consequent_1",
+            "family": "affirming_consequent",
+            "wrong": 0.0,
+            "noncorrect": 0.0,
+            "unknown_bound_low": 0.0,
+            "unknown_bound_high": 0.0
+          },
+          {
+            "item_id": "v15_conjunction_elimination_0",
+            "family": "conjunction_elimination",
+            "wrong": 0.0,
+            "noncorrect": 0.0,
+            "unknown_bound_low": 0.0,
+            "unknown_bound_high": 0.0
+          },
+          {
+            "item_id": "v15_conjunction_elimination_1",
+            "family": "conjunction_elimination",
+            "wrong": 0.0,
+            "noncorrect": 0.0,
+            "unknown_bound_low": 0.0,
+            "unknown_bound_high": 0.0
+          },
+          {
+            "item_id": "v15_denying_antecedent_0",
+            "family": "denying_antecedent",
+            "wrong": 0.0,
+            "noncorrect": 0.0,
+            "unknown_bound_low": 0.0,
+            "unknown_bound_high": 0.0
+          },
+          {
+            "item_id": "v15_denying_antecedent_1",
+            "family": "denying_antecedent",
+            "wrong": 0.0,
+            "noncorrect": 0.0,
+            "unknown_bound_low": 0.0,
+            "unknown_bound_high": 0.0
+          },
+          {
+            "item_id": "v15_disjunction_strengthening_0",
+            "family": "disjunction_strengthening",
+            "wrong": 0.0,
+            "noncorrect": 0.0,
+            "unknown_bound_low": 0.0,
+            "unknown_bound_high": 0.0
+          },
+          {
+            "item_id": "v15_disjunction_strengthening_1",
+            "family": "disjunction_strengthening",
+            "wrong": 0.0,
+            "noncorrect": 0.0,
+            "unknown_bound_low": 0.0,
+            "unknown_bound_high": 0.0
+          },
+          {
+            "item_id": "v15_disjunctive_syllogism_0",
+            "family": "disjunctive_syllogism",
+            "wrong": 0.0,
+            "noncorrect": 0.0,
+            "unknown_bound_low": 0.0,
+            "unknown_bound_high": 0.0
+          },
+          {
+            "item_id": "v15_disjunctive_syllogism_1",
+            "family": "disjunctive_syllogism",
+            "wrong": 0.0,
+            "noncorrect": 0.0,
+            "unknown_bound_low": 0.0,
+            "unknown_bound_high": 0.0
+          },
+          {
+            "item_id": "v15_modus_ponens_0",
+            "family": "modus_ponens",
+            "wrong": 0.0,
+            "noncorrect": 0.0,
+            "unknown_bound_low": 0.0,
+            "unknown_bound_high": 0.0
+          },
+          {
+            "item_id": "v15_modus_ponens_1",
+            "family": "modus_ponens",
+            "wrong": 0.0,
+            "noncorrect": 0.0,
+            "unknown_bound_low": 0.0,
+            "unknown_bound_high": 0.0
+          },
+          {
+            "item_id": "v15_record_and_0_0",
+            "family": "record_and",
+            "wrong": 0.0,
+            "noncorrect": 0.0,
+            "unknown_bound_low": 0.0,
+            "unknown_bound_high": 0.0
+          },
+          {
+            "item_id": "v15_record_and_0_1",
+            "family": "record_and",
+            "wrong": 0.0,
+            "noncorrect": 0.0,
+            "unknown_bound_low": 0.0,
+            "unknown_bound_high": 0.0
+          },
+          {
+            "item_id": "v15_record_and_1_0",
+            "family": "record_and",
+            "wrong": 0.0,
+            "noncorrect": 0.0,
+            "unknown_bound_low": 0.0,
+            "unknown_bound_high": 0.0
+          },
+          {
+            "item_id": "v15_record_and_1_1",
+            "family": "record_and",
+            "wrong": 0.0,
+            "noncorrect": 0.0,
+            "unknown_bound_low": 0.0,
+            "unknown_bound_high": 0.0
+          },
+          {
+            "item_id": "v15_record_implies_0_0",
+            "family": "record_implies",
+            "wrong": 0.0,
+            "noncorrect": 0.0,
+            "unknown_bound_low": 0.0,
+            "unknown_bound_high": 0.0
+          },
+          {
+            "item_id": "v15_record_implies_0_1",
+            "family": "record_implies",
+            "wrong": 0.0,
+            "noncorrect": 0.0,
+            "unknown_bound_low": 0.0,
+            "unknown_bound_high": 0.0
+          },
+          {
+            "item_id": "v15_record_implies_1_0",
+            "family": "record_implies",
+            "wrong": 0.0,
+            "noncorrect": 0.0,
+            "unknown_bound_low": 0.0,
+            "unknown_bound_high": 0.0
+          },
+          {
+            "item_id": "v15_record_implies_1_1",
+            "family": "record_implies",
+            "wrong": 0.0,
+            "noncorrect": 0.0,
+            "unknown_bound_low": 0.0,
+            "unknown_bound_high": 0.0
+          },
+          {
+            "item_id": "v15_record_or_0_0",
+            "family": "record_or",
+            "wrong": 0.0,
+            "noncorrect": 0.0,
+            "unknown_bound_low": 0.0,
+            "unknown_bound_high": 0.0
+          },
+          {
+            "item_id": "v15_record_or_0_1",
+            "family": "record_or",
+            "wrong": 0.0,
+            "noncorrect": 0.0,
+            "unknown_bound_low": 0.0,
+            "unknown_bound_high": 0.0
+          },
+          {
+            "item_id": "v15_record_or_1_0",
+            "family": "record_or",
+            "wrong": 0.0,
+            "noncorrect": 0.0,
+            "unknown_bound_low": 0.0,
+            "unknown_bound_high": 0.0
+          },
+          {
+            "item_id": "v15_record_or_1_1",
+            "family": "record_or",
+            "wrong": 0.0,
+            "noncorrect": 0.0,
+            "unknown_bound_low": 0.0,
+            "unknown_bound_high": 0.0
+          }
+        ],
+        "caution": "Exploratory very-small-cluster interval; not confirmatory significance."
+      },
+      "qualified_only_primary": {
+        "treatment": "preference",
+        "control": "repetition",
+        "n_items": 24,
+        "n_families": 9,
+        "wrong_difference": -0.010416666666666666,
+        "wrong_cluster_bootstrap_95": [
+          -0.0375,
+          0.0
+        ],
+        "noncorrect_difference": -0.010416666666666666,
+        "noncorrect_cluster_bootstrap_95": [
+          -0.0375,
+          0.0
+        ],
+        "unknown_assignment_bounds": [
+          -0.010416666666666666,
+          -0.010416666666666666
+        ],
+        "item_differences": [
+          {
+            "item_id": "v15_affirming_consequent_0",
+            "family": "affirming_consequent",
+            "wrong": 0.0,
+            "noncorrect": 0.0,
+            "unknown_bound_low": 0.0,
+            "unknown_bound_high": 0.0
+          },
+          {
+            "item_id": "v15_affirming_consequent_1",
+            "family": "affirming_consequent",
+            "wrong": 0.0,
+            "noncorrect": 0.0,
+            "unknown_bound_low": 0.0,
+            "unknown_bound_high": 0.0
+          },
+          {
+            "item_id": "v15_conjunction_elimination_0",
+            "family": "conjunction_elimination",
+            "wrong": 0.0,
+            "noncorrect": 0.0,
+            "unknown_bound_low": 0.0,
+            "unknown_bound_high": 0.0
+          },
+          {
+            "item_id": "v15_conjunction_elimination_1",
+            "family": "conjunction_elimination",
+            "wrong": 0.0,
+            "noncorrect": 0.0,
+            "unknown_bound_low": 0.0,
+            "unknown_bound_high": 0.0
+          },
+          {
+            "item_id": "v15_denying_antecedent_0",
+            "family": "denying_antecedent",
+            "wrong": -0.25,
+            "noncorrect": -0.25,
+            "unknown_bound_low": -0.25,
+            "unknown_bound_high": -0.25
+          },
+          {
+            "item_id": "v15_denying_antecedent_1",
+            "family": "denying_antecedent",
+            "wrong": 0.0,
+            "noncorrect": 0.0,
+            "unknown_bound_low": 0.0,
+            "unknown_bound_high": 0.0
+          },
+          {
+            "item_id": "v15_disjunction_strengthening_0",
+            "family": "disjunction_strengthening",
+            "wrong": 0.0,
+            "noncorrect": 0.0,
+            "unknown_bound_low": 0.0,
+            "unknown_bound_high": 0.0
+          },
+          {
+            "item_id": "v15_disjunction_strengthening_1",
+            "family": "disjunction_strengthening",
+            "wrong": 0.0,
+            "noncorrect": 0.0,
+            "unknown_bound_low": 0.0,
+            "unknown_bound_high": 0.0
+          },
+          {
+            "item_id": "v15_disjunctive_syllogism_0",
+            "family": "disjunctive_syllogism",
+            "wrong": 0.0,
+            "noncorrect": 0.0,
+            "unknown_bound_low": 0.0,
+            "unknown_bound_high": 0.0
+          },
+          {
+            "item_id": "v15_disjunctive_syllogism_1",
+            "family": "disjunctive_syllogism",
+            "wrong": 0.0,
+            "noncorrect": 0.0,
+            "unknown_bound_low": 0.0,
+            "unknown_bound_high": 0.0
+          },
+          {
+            "item_id": "v15_modus_ponens_0",
+            "family": "modus_ponens",
+            "wrong": 0.0,
+            "noncorrect": 0.0,
+            "unknown_bound_low": 0.0,
+            "unknown_bound_high": 0.0
+          },
+          {
+            "item_id": "v15_modus_ponens_1",
+            "family": "modus_ponens",
+            "wrong": 0.0,
+            "noncorrect": 0.0,
+            "unknown_bound_low": 0.0,
+            "unknown_bound_high": 0.0
+          },
+          {
+            "item_id": "v15_record_and_0_0",
+            "family": "record_and",
+            "wrong": 0.0,
+            "noncorrect": 0.0,
+            "unknown_bound_low": 0.0,
+            "unknown_bound_high": 0.0
+          },
+          {
+            "item_id": "v15_record_and_0_1",
+            "family": "record_and",
+            "wrong": 0.0,
+            "noncorrect": 0.0,
+            "unknown_bound_low": 0.0,
+            "unknown_bound_high": 0.0
+          },
+          {
+            "item_id": "v15_record_and_1_0",
+            "family": "record_and",
+            "wrong": 0.0,
+            "noncorrect": 0.0,
+            "unknown_bound_low": 0.0,
+            "unknown_bound_high": 0.0
+          },
+          {
+            "item_id": "v15_record_and_1_1",
+            "family": "record_and",
+            "wrong": 0.0,
+            "noncorrect": 0.0,
+            "unknown_bound_low": 0.0,
+            "unknown_bound_high": 0.0
+          },
+          {
+            "item_id": "v15_record_implies_0_0",
+            "family": "record_implies",
+            "wrong": 0.0,
+            "noncorrect": 0.0,
+            "unknown_bound_low": 0.0,
+            "unknown_bound_high": 0.0
+          },
+          {
+            "item_id": "v15_record_implies_0_1",
+            "family": "record_implies",
+            "wrong": 0.0,
+            "noncorrect": 0.0,
+            "unknown_bound_low": 0.0,
+            "unknown_bound_high": 0.0
+          },
+          {
+            "item_id": "v15_record_implies_1_0",
+            "family": "record_implies",
+            "wrong": 0.0,
+            "noncorrect": 0.0,
+            "unknown_bound_low": 0.0,
+            "unknown_bound_high": 0.0
+          },
+          {
+            "item_id": "v15_record_implies_1_1",
+            "family": "record_implies",
+            "wrong": 0.0,
+            "noncorrect": 0.0,
+            "unknown_bound_low": 0.0,
+            "unknown_bound_high": 0.0
+          },
+          {
+            "item_id": "v15_record_or_0_0",
+            "family": "record_or",
+            "wrong": 0.0,
+            "noncorrect": 0.0,
+            "unknown_bound_low": 0.0,
+            "unknown_bound_high": 0.0
+          },
+          {
+            "item_id": "v15_record_or_0_1",
+            "family": "record_or",
+            "wrong": 0.0,
+            "noncorrect": 0.0,
+            "unknown_bound_low": 0.0,
+            "unknown_bound_high": 0.0
+          },
+          {
+            "item_id": "v15_record_or_1_0",
+            "family": "record_or",
+            "wrong": 0.0,
+            "noncorrect": 0.0,
+            "unknown_bound_low": 0.0,
+            "unknown_bound_high": 0.0
+          },
+          {
+            "item_id": "v15_record_or_1_1",
+            "family": "record_or",
+            "wrong": 0.0,
+            "noncorrect": 0.0,
+            "unknown_bound_low": 0.0,
+            "unknown_bound_high": 0.0
+          }
+        ],
+        "caution": "Exploratory very-small-cluster interval; not confirmatory significance."
+      },
+      "by_axis_primary": {
+        "truth": {
+          "treatment": "preference",
+          "control": "repetition",
+          "n_items": 12,
+          "n_families": 3,
+          "wrong_difference": 0.0,
+          "wrong_cluster_bootstrap_95": [
+            0.0,
+            0.0
+          ],
+          "noncorrect_difference": 0.0,
+          "noncorrect_cluster_bootstrap_95": [
+            0.0,
+            0.0
+          ],
+          "unknown_assignment_bounds": [
+            0.0,
+            0.0
+          ],
+          "item_differences": [
+            {
+              "item_id": "v15_record_and_0_0",
+              "family": "record_and",
+              "wrong": 0.0,
+              "noncorrect": 0.0,
+              "unknown_bound_low": 0.0,
+              "unknown_bound_high": 0.0
+            },
+            {
+              "item_id": "v15_record_and_0_1",
+              "family": "record_and",
+              "wrong": 0.0,
+              "noncorrect": 0.0,
+              "unknown_bound_low": 0.0,
+              "unknown_bound_high": 0.0
+            },
+            {
+              "item_id": "v15_record_and_1_0",
+              "family": "record_and",
+              "wrong": 0.0,
+              "noncorrect": 0.0,
+              "unknown_bound_low": 0.0,
+              "unknown_bound_high": 0.0
+            },
+            {
+              "item_id": "v15_record_and_1_1",
+              "family": "record_and",
+              "wrong": 0.0,
+              "noncorrect": 0.0,
+              "unknown_bound_low": 0.0,
+              "unknown_bound_high": 0.0
+            },
+            {
+              "item_id": "v15_record_implies_0_0",
+              "family": "record_implies",
+              "wrong": 0.0,
+              "noncorrect": 0.0,
+              "unknown_bound_low": 0.0,
+              "unknown_bound_high": 0.0
+            },
+            {
+              "item_id": "v15_record_implies_0_1",
+              "family": "record_implies",
+              "wrong": 0.0,
+              "noncorrect": 0.0,
+              "unknown_bound_low": 0.0,
+              "unknown_bound_high": 0.0
+            },
+            {
+              "item_id": "v15_record_implies_1_0",
+              "family": "record_implies",
+              "wrong": 0.0,
+              "noncorrect": 0.0,
+              "unknown_bound_low": 0.0,
+              "unknown_bound_high": 0.0
+            },
+            {
+              "item_id": "v15_record_implies_1_1",
+              "family": "record_implies",
+              "wrong": 0.0,
+              "noncorrect": 0.0,
+              "unknown_bound_low": 0.0,
+              "unknown_bound_high": 0.0
+            },
+            {
+              "item_id": "v15_record_or_0_0",
+              "family": "record_or",
+              "wrong": 0.0,
+              "noncorrect": 0.0,
+              "unknown_bound_low": 0.0,
+              "unknown_bound_high": 0.0
+            },
+            {
+              "item_id": "v15_record_or_0_1",
+              "family": "record_or",
+              "wrong": 0.0,
+              "noncorrect": 0.0,
+              "unknown_bound_low": 0.0,
+              "unknown_bound_high": 0.0
+            },
+            {
+              "item_id": "v15_record_or_1_0",
+              "family": "record_or",
+              "wrong": 0.0,
+              "noncorrect": 0.0,
+              "unknown_bound_low": 0.0,
+              "unknown_bound_high": 0.0
+            },
+            {
+              "item_id": "v15_record_or_1_1",
+              "family": "record_or",
+              "wrong": 0.0,
+              "noncorrect": 0.0,
+              "unknown_bound_low": 0.0,
+              "unknown_bound_high": 0.0
+            }
+          ],
+          "caution": "Exploratory very-small-cluster interval; not confirmatory significance."
+        },
+        "validity": {
+          "treatment": "preference",
+          "control": "repetition",
+          "n_items": 12,
+          "n_families": 6,
+          "wrong_difference": -0.020833333333333332,
+          "wrong_cluster_bootstrap_95": [
+            -0.0625,
+            0.0
+          ],
+          "noncorrect_difference": -0.020833333333333332,
+          "noncorrect_cluster_bootstrap_95": [
+            -0.0625,
+            0.0
+          ],
+          "unknown_assignment_bounds": [
+            -0.020833333333333332,
+            -0.020833333333333332
+          ],
+          "item_differences": [
+            {
+              "item_id": "v15_affirming_consequent_0",
+              "family": "affirming_consequent",
+              "wrong": 0.0,
+              "noncorrect": 0.0,
+              "unknown_bound_low": 0.0,
+              "unknown_bound_high": 0.0
+            },
+            {
+              "item_id": "v15_affirming_consequent_1",
+              "family": "affirming_consequent",
+              "wrong": 0.0,
+              "noncorrect": 0.0,
+              "unknown_bound_low": 0.0,
+              "unknown_bound_high": 0.0
+            },
+            {
+              "item_id": "v15_conjunction_elimination_0",
+              "family": "conjunction_elimination",
+              "wrong": 0.0,
+              "noncorrect": 0.0,
+              "unknown_bound_low": 0.0,
+              "unknown_bound_high": 0.0
+            },
+            {
+              "item_id": "v15_conjunction_elimination_1",
+              "family": "conjunction_elimination",
+              "wrong": 0.0,
+              "noncorrect": 0.0,
+              "unknown_bound_low": 0.0,
+              "unknown_bound_high": 0.0
+            },
+            {
+              "item_id": "v15_denying_antecedent_0",
+              "family": "denying_antecedent",
+              "wrong": -0.25,
+              "noncorrect": -0.25,
+              "unknown_bound_low": -0.25,
+              "unknown_bound_high": -0.25
+            },
+            {
+              "item_id": "v15_denying_antecedent_1",
+              "family": "denying_antecedent",
+              "wrong": 0.0,
+              "noncorrect": 0.0,
+              "unknown_bound_low": 0.0,
+              "unknown_bound_high": 0.0
+            },
+            {
+              "item_id": "v15_disjunction_strengthening_0",
+              "family": "disjunction_strengthening",
+              "wrong": 0.0,
+              "noncorrect": 0.0,
+              "unknown_bound_low": 0.0,
+              "unknown_bound_high": 0.0
+            },
+            {
+              "item_id": "v15_disjunction_strengthening_1",
+              "family": "disjunction_strengthening",
+              "wrong": 0.0,
+              "noncorrect": 0.0,
+              "unknown_bound_low": 0.0,
+              "unknown_bound_high": 0.0
+            },
+            {
+              "item_id": "v15_disjunctive_syllogism_0",
+              "family": "disjunctive_syllogism",
+              "wrong": 0.0,
+              "noncorrect": 0.0,
+              "unknown_bound_low": 0.0,
+              "unknown_bound_high": 0.0
+            },
+            {
+              "item_id": "v15_disjunctive_syllogism_1",
+              "family": "disjunctive_syllogism",
+              "wrong": 0.0,
+              "noncorrect": 0.0,
+              "unknown_bound_low": 0.0,
+              "unknown_bound_high": 0.0
+            },
+            {
+              "item_id": "v15_modus_ponens_0",
+              "family": "modus_ponens",
+              "wrong": 0.0,
+              "noncorrect": 0.0,
+              "unknown_bound_low": 0.0,
+              "unknown_bound_high": 0.0
+            },
+            {
+              "item_id": "v15_modus_ponens_1",
+              "family": "modus_ponens",
+              "wrong": 0.0,
+              "noncorrect": 0.0,
+              "unknown_bound_low": 0.0,
+              "unknown_bound_high": 0.0
+            }
+          ],
+          "caution": "Exploratory very-small-cluster interval; not confirmatory significance."
+        }
+      }
+    },
+    "valid_update": {
+      "n": 96,
+      "correct": 80,
+      "wrong": 16,
+      "unknown": 0,
+      "correct_rate": 0.8333333333333334,
+      "wrong_rate": 0.16666666666666666,
+      "unknown_rate": 0.0,
+      "old_label_persistence": 16
+    },
+    "preference_effect_established": false,
+    "publication_ready": false
+  },
+  "post_hoc_updated_standalone": {
+    "integrity_ok": true,
+    "post_hoc": true,
+    "standalone": {
+      "n": 96,
+      "correct": 96,
+      "wrong": 0,
+      "unknown": 0,
+      "correct_rate": 1.0,
+      "wrong_rate": 0.0,
+      "unknown_rate": 0.0
+    },
+    "history": {
+      "n": 96,
+      "correct": 80,
+      "wrong": 16,
+      "unknown": 0,
+      "correct_rate": 0.8333333333333334,
+      "wrong_rate": 0.16666666666666666,
+      "unknown_rate": 0.0
+    },
+    "history_minus_standalone": {
+      "treatment": "valid_update",
+      "control": "updated_standalone",
+      "n_items": 24,
+      "n_families": 9,
+      "wrong_difference": 0.16666666666666666,
+      "wrong_cluster_bootstrap_95": [
+        0.0,
+        0.4444444444444444
+      ],
+      "noncorrect_difference": 0.16666666666666666,
+      "noncorrect_cluster_bootstrap_95": [
+        0.0,
+        0.4444444444444444
+      ],
+      "unknown_assignment_bounds": [
+        0.16666666666666666,
+        0.16666666666666666
+      ],
+      "item_differences": [
+        {
+          "item_id": "v15_affirming_consequent_0",
+          "family": "affirming_consequent",
+          "wrong": 0.0,
+          "noncorrect": 0.0,
+          "unknown_bound_low": 0.0,
+          "unknown_bound_high": 0.0
+        },
+        {
+          "item_id": "v15_affirming_consequent_1",
+          "family": "affirming_consequent",
+          "wrong": 0.0,
+          "noncorrect": 0.0,
+          "unknown_bound_low": 0.0,
+          "unknown_bound_high": 0.0
+        },
+        {
+          "item_id": "v15_conjunction_elimination_0",
+          "family": "conjunction_elimination",
+          "wrong": 0.0,
+          "noncorrect": 0.0,
+          "unknown_bound_low": 0.0,
+          "unknown_bound_high": 0.0
+        },
+        {
+          "item_id": "v15_conjunction_elimination_1",
+          "family": "conjunction_elimination",
+          "wrong": 0.0,
+          "noncorrect": 0.0,
+          "unknown_bound_low": 0.0,
+          "unknown_bound_high": 0.0
+        },
+        {
+          "item_id": "v15_denying_antecedent_0",
+          "family": "denying_antecedent",
+          "wrong": 0.0,
+          "noncorrect": 0.0,
+          "unknown_bound_low": 0.0,
+          "unknown_bound_high": 0.0
+        },
+        {
+          "item_id": "v15_denying_antecedent_1",
+          "family": "denying_antecedent",
+          "wrong": 0.0,
+          "noncorrect": 0.0,
+          "unknown_bound_low": 0.0,
+          "unknown_bound_high": 0.0
+        },
+        {
+          "item_id": "v15_disjunction_strengthening_0",
+          "family": "disjunction_strengthening",
+          "wrong": 0.0,
+          "noncorrect": 0.0,
+          "unknown_bound_low": 0.0,
+          "unknown_bound_high": 0.0
+        },
+        {
+          "item_id": "v15_disjunction_strengthening_1",
+          "family": "disjunction_strengthening",
+          "wrong": 0.0,
+          "noncorrect": 0.0,
+          "unknown_bound_low": 0.0,
+          "unknown_bound_high": 0.0
+        },
+        {
+          "item_id": "v15_disjunctive_syllogism_0",
+          "family": "disjunctive_syllogism",
+          "wrong": 1.0,
+          "noncorrect": 1.0,
+          "unknown_bound_low": 1.0,
+          "unknown_bound_high": 1.0
+        },
+        {
+          "item_id": "v15_disjunctive_syllogism_1",
+          "family": "disjunctive_syllogism",
+          "wrong": 1.0,
+          "noncorrect": 1.0,
+          "unknown_bound_low": 1.0,
+          "unknown_bound_high": 1.0
+        },
+        {
+          "item_id": "v15_modus_ponens_0",
+          "family": "modus_ponens",
+          "wrong": 1.0,
+          "noncorrect": 1.0,
+          "unknown_bound_low": 1.0,
+          "unknown_bound_high": 1.0
+        },
+        {
+          "item_id": "v15_modus_ponens_1",
+          "family": "modus_ponens",
+          "wrong": 1.0,
+          "noncorrect": 1.0,
+          "unknown_bound_low": 1.0,
+          "unknown_bound_high": 1.0
+        },
+        {
+          "item_id": "v15_record_and_0_0",
+          "family": "record_and",
+          "wrong": 0.0,
+          "noncorrect": 0.0,
+          "unknown_bound_low": 0.0,
+          "unknown_bound_high": 0.0
+        },
+        {
+          "item_id": "v15_record_and_0_1",
+          "family": "record_and",
+          "wrong": 0.0,
+          "noncorrect": 0.0,
+          "unknown_bound_low": 0.0,
+          "unknown_bound_high": 0.0
+        },
+        {
+          "item_id": "v15_record_and_1_0",
+          "family": "record_and",
+          "wrong": 0.0,
+          "noncorrect": 0.0,
+          "unknown_bound_low": 0.0,
+          "unknown_bound_high": 0.0
+        },
+        {
+          "item_id": "v15_record_and_1_1",
+          "family": "record_and",
+          "wrong": 0.0,
+          "noncorrect": 0.0,
+          "unknown_bound_low": 0.0,
+          "unknown_bound_high": 0.0
+        },
+        {
+          "item_id": "v15_record_implies_0_0",
+          "family": "record_implies",
+          "wrong": 0.0,
+          "noncorrect": 0.0,
+          "unknown_bound_low": 0.0,
+          "unknown_bound_high": 0.0
+        },
+        {
+          "item_id": "v15_record_implies_0_1",
+          "family": "record_implies",
+          "wrong": 0.0,
+          "noncorrect": 0.0,
+          "unknown_bound_low": 0.0,
+          "unknown_bound_high": 0.0
+        },
+        {
+          "item_id": "v15_record_implies_1_0",
+          "family": "record_implies",
+          "wrong": 0.0,
+          "noncorrect": 0.0,
+          "unknown_bound_low": 0.0,
+          "unknown_bound_high": 0.0
+        },
+        {
+          "item_id": "v15_record_implies_1_1",
+          "family": "record_implies",
+          "wrong": 0.0,
+          "noncorrect": 0.0,
+          "unknown_bound_low": 0.0,
+          "unknown_bound_high": 0.0
+        },
+        {
+          "item_id": "v15_record_or_0_0",
+          "family": "record_or",
+          "wrong": 0.0,
+          "noncorrect": 0.0,
+          "unknown_bound_low": 0.0,
+          "unknown_bound_high": 0.0
+        },
+        {
+          "item_id": "v15_record_or_0_1",
+          "family": "record_or",
+          "wrong": 0.0,
+          "noncorrect": 0.0,
+          "unknown_bound_low": 0.0,
+          "unknown_bound_high": 0.0
+        },
+        {
+          "item_id": "v15_record_or_1_0",
+          "family": "record_or",
+          "wrong": 0.0,
+          "noncorrect": 0.0,
+          "unknown_bound_low": 0.0,
+          "unknown_bound_high": 0.0
+        },
+        {
+          "item_id": "v15_record_or_1_1",
+          "family": "record_or",
+          "wrong": 0.0,
+          "noncorrect": 0.0,
+          "unknown_bound_low": 0.0,
+          "unknown_bound_high": 0.0
+        }
+      ],
+      "caution": "Exploratory very-small-cluster interval; not confirmatory significance."
+    },
+    "by_axis": {
+      "truth": {
+        "treatment": "valid_update",
+        "control": "updated_standalone",
+        "n_items": 12,
+        "n_families": 3,
+        "wrong_difference": 0.0,
+        "wrong_cluster_bootstrap_95": [
+          0.0,
+          0.0
+        ],
+        "noncorrect_difference": 0.0,
+        "noncorrect_cluster_bootstrap_95": [
+          0.0,
+          0.0
+        ],
+        "unknown_assignment_bounds": [
+          0.0,
+          0.0
+        ],
+        "item_differences": [
+          {
+            "item_id": "v15_record_and_0_0",
+            "family": "record_and",
+            "wrong": 0.0,
+            "noncorrect": 0.0,
+            "unknown_bound_low": 0.0,
+            "unknown_bound_high": 0.0
+          },
+          {
+            "item_id": "v15_record_and_0_1",
+            "family": "record_and",
+            "wrong": 0.0,
+            "noncorrect": 0.0,
+            "unknown_bound_low": 0.0,
+            "unknown_bound_high": 0.0
+          },
+          {
+            "item_id": "v15_record_and_1_0",
+            "family": "record_and",
+            "wrong": 0.0,
+            "noncorrect": 0.0,
+            "unknown_bound_low": 0.0,
+            "unknown_bound_high": 0.0
+          },
+          {
+            "item_id": "v15_record_and_1_1",
+            "family": "record_and",
+            "wrong": 0.0,
+            "noncorrect": 0.0,
+            "unknown_bound_low": 0.0,
+            "unknown_bound_high": 0.0
+          },
+          {
+            "item_id": "v15_record_implies_0_0",
+            "family": "record_implies",
+            "wrong": 0.0,
+            "noncorrect": 0.0,
+            "unknown_bound_low": 0.0,
+            "unknown_bound_high": 0.0
+          },
+          {
+            "item_id": "v15_record_implies_0_1",
+            "family": "record_implies",
+            "wrong": 0.0,
+            "noncorrect": 0.0,
+            "unknown_bound_low": 0.0,
+            "unknown_bound_high": 0.0
+          },
+          {
+            "item_id": "v15_record_implies_1_0",
+            "family": "record_implies",
+            "wrong": 0.0,
+            "noncorrect": 0.0,
+            "unknown_bound_low": 0.0,
+            "unknown_bound_high": 0.0
+          },
+          {
+            "item_id": "v15_record_implies_1_1",
+            "family": "record_implies",
+            "wrong": 0.0,
+            "noncorrect": 0.0,
+            "unknown_bound_low": 0.0,
+            "unknown_bound_high": 0.0
+          },
+          {
+            "item_id": "v15_record_or_0_0",
+            "family": "record_or",
+            "wrong": 0.0,
+            "noncorrect": 0.0,
+            "unknown_bound_low": 0.0,
+            "unknown_bound_high": 0.0
+          },
+          {
+            "item_id": "v15_record_or_0_1",
+            "family": "record_or",
+            "wrong": 0.0,
+            "noncorrect": 0.0,
+            "unknown_bound_low": 0.0,
+            "unknown_bound_high": 0.0
+          },
+          {
+            "item_id": "v15_record_or_1_0",
+            "family": "record_or",
+            "wrong": 0.0,
+            "noncorrect": 0.0,
+            "unknown_bound_low": 0.0,
+            "unknown_bound_high": 0.0
+          },
+          {
+            "item_id": "v15_record_or_1_1",
+            "family": "record_or",
+            "wrong": 0.0,
+            "noncorrect": 0.0,
+            "unknown_bound_low": 0.0,
+            "unknown_bound_high": 0.0
+          }
+        ],
+        "caution": "Exploratory very-small-cluster interval; not confirmatory significance."
+      },
+      "validity": {
+        "treatment": "valid_update",
+        "control": "updated_standalone",
+        "n_items": 12,
+        "n_families": 6,
+        "wrong_difference": 0.3333333333333333,
+        "wrong_cluster_bootstrap_95": [
+          0.0,
+          0.6666666666666666
+        ],
+        "noncorrect_difference": 0.3333333333333333,
+        "noncorrect_cluster_bootstrap_95": [
+          0.0,
+          0.6666666666666666
+        ],
+        "unknown_assignment_bounds": [
+          0.3333333333333333,
+          0.3333333333333333
+        ],
+        "item_differences": [
+          {
+            "item_id": "v15_affirming_consequent_0",
+            "family": "affirming_consequent",
+            "wrong": 0.0,
+            "noncorrect": 0.0,
+            "unknown_bound_low": 0.0,
+            "unknown_bound_high": 0.0
+          },
+          {
+            "item_id": "v15_affirming_consequent_1",
+            "family": "affirming_consequent",
+            "wrong": 0.0,
+            "noncorrect": 0.0,
+            "unknown_bound_low": 0.0,
+            "unknown_bound_high": 0.0
+          },
+          {
+            "item_id": "v15_conjunction_elimination_0",
+            "family": "conjunction_elimination",
+            "wrong": 0.0,
+            "noncorrect": 0.0,
+            "unknown_bound_low": 0.0,
+            "unknown_bound_high": 0.0
+          },
+          {
+            "item_id": "v15_conjunction_elimination_1",
+            "family": "conjunction_elimination",
+            "wrong": 0.0,
+            "noncorrect": 0.0,
+            "unknown_bound_low": 0.0,
+            "unknown_bound_high": 0.0
+          },
+          {
+            "item_id": "v15_denying_antecedent_0",
+            "family": "denying_antecedent",
+            "wrong": 0.0,
+            "noncorrect": 0.0,
+            "unknown_bound_low": 0.0,
+            "unknown_bound_high": 0.0
+          },
+          {
+            "item_id": "v15_denying_antecedent_1",
+            "family": "denying_antecedent",
+            "wrong": 0.0,
+            "noncorrect": 0.0,
+            "unknown_bound_low": 0.0,
+            "unknown_bound_high": 0.0
+          },
+          {
+            "item_id": "v15_disjunction_strengthening_0",
+            "family": "disjunction_strengthening",
+            "wrong": 0.0,
+            "noncorrect": 0.0,
+            "unknown_bound_low": 0.0,
+            "unknown_bound_high": 0.0
+          },
+          {
+            "item_id": "v15_disjunction_strengthening_1",
+            "family": "disjunction_strengthening",
+            "wrong": 0.0,
+            "noncorrect": 0.0,
+            "unknown_bound_low": 0.0,
+            "unknown_bound_high": 0.0
+          },
+          {
+            "item_id": "v15_disjunctive_syllogism_0",
+            "family": "disjunctive_syllogism",
+            "wrong": 1.0,
+            "noncorrect": 1.0,
+            "unknown_bound_low": 1.0,
+            "unknown_bound_high": 1.0
+          },
+          {
+            "item_id": "v15_disjunctive_syllogism_1",
+            "family": "disjunctive_syllogism",
+            "wrong": 1.0,
+            "noncorrect": 1.0,
+            "unknown_bound_low": 1.0,
+            "unknown_bound_high": 1.0
+          },
+          {
+            "item_id": "v15_modus_ponens_0",
+            "family": "modus_ponens",
+            "wrong": 1.0,
+            "noncorrect": 1.0,
+            "unknown_bound_low": 1.0,
+            "unknown_bound_high": 1.0
+          },
+          {
+            "item_id": "v15_modus_ponens_1",
+            "family": "modus_ponens",
+            "wrong": 1.0,
+            "noncorrect": 1.0,
+            "unknown_bound_low": 1.0,
+            "unknown_bound_high": 1.0
+          }
+        ],
+        "caution": "Exploratory very-small-cluster interval; not confirmatory significance."
+      }
+    },
+    "caution": "Old history PLUS explicit update wording vs fresh question; not a pure isolated history effect."
+  },
+  "main_failure_groups": [
+    {
+      "arm": "valid_update",
+      "family": "modus_ponens",
+      "outcome": "wrong",
+      "n": 8
+    },
+    {
+      "arm": "valid_update",
+      "family": "disjunctive_syllogism",
+      "outcome": "wrong",
+      "n": 8
+    },
+    {
+      "arm": "repetition",
+      "family": "denying_antecedent",
+      "outcome": "wrong",
+      "n": 1
+    }
+  ],
+  "preference_effect_established": false,
+  "publication_ready": false
+}

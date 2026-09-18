@@ -1,0 +1,1 @@
+{"written": "E:\\T'I'Y\\PreferenceDrift-Handoff-Run\\outputs\\official\\revision_v16_final_audit.rerun.json", "original_root_paths_mapped": 16}

@@ -1,0 +1,41 @@
+........................................................................ [ 25%]
+........................................................................ [ 50%]
+..F..................................................................... [ 76%]
+...................................................................      [100%]
+================================== FAILURES ===================================
+______ test_package_preserves_code_and_data_excludes_runtime_and_secrets ______
+
+tmp_path = WindowsPath("E:/T'I'Y/PreferenceDrift-Handoff-Run/_work/pytest_tmp/test_package_preserves_code_an0")
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x000001D73B73FEC0>
+
+    def test_package_preserves_code_and_data_excludes_runtime_and_secrets(tmp_path, monkeypatch):
+        source = tmp_path / "source"
+        source.mkdir()
+        for name, value in {"readme.md": "research", "samples.json": "[]", ".env": "test-only secret",
+                            ".env.example": "KEY=placeholder", "model.safetensors": "fixture", ".run.lock": ""}.items():
+            (source / name).write_text(value)
+        (source / ".venv").mkdir()
+        (source / ".venv" / "runtime.py").write_text("fixture")
+>       (source / "linked.md").symlink_to(source / "readme.md")
+
+tests\test_measurement_package.py:15: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = WindowsPath("E:/T'I'Y/PreferenceDrift-Handoff-Run/_work/pytest_tmp/test_package_preserves_code_an0/source/linked.md")
+target = WindowsPath("E:/T'I'Y/PreferenceDrift-Handoff-Run/_work/pytest_tmp/test_package_preserves_code_an0/source/readme.md")
+target_is_directory = False
+
+    def symlink_to(self, target, target_is_directory=False):
+        """
+        Make this path a symlink pointing to the target path.
+        Note the order of arguments (link, target) is the reverse of os.symlink.
+        """
+        if not hasattr(os, "symlink"):
+            raise NotImplementedError("os.symlink() not available on this system")
+>       os.symlink(target, self, target_is_directory)
+E       OSError: [WinError 1314] A required privilege is not held by the client: "E:\\T'I'Y\\PreferenceDrift-Handoff-Run\\_work\\pytest_tmp\\test_package_preserves_code_an0\\source\\readme.md" -> "E:\\T'I'Y\\PreferenceDrift-Handoff-Run\\_work\\pytest_tmp\\test_package_preserves_code_an0\\source\\linked.md"
+
+C:\Users\copyw\AppData\Roaming\uv\python\cpython-3.12-windows-x86_64-none\Lib\pathlib.py:1386: OSError
+=========================== short test summary info ===========================
+FAILED tests/test_measurement_package.py::test_package_preserves_code_and_data_excludes_runtime_and_secrets
+1 failed, 282 passed in 42.29s
