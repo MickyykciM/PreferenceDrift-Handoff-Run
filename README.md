@@ -55,11 +55,13 @@ uv pip install --python _work/.venv/Scripts/python.exe numpy==2.5.3 jsonschema==
 _work/.venv/Scripts/python.exe reproduce.py
 ```
 
-On macOS or Linux, use `_work/.venv/bin/python`. The whole run takes about one minute.
-
-The deepest path inside the snapshot is 146 characters. On Windows without long-path support, clone into a short folder or pass a short work directory, for example `reproduce.py --work-dir C:\pdw`; the script checks the length before unpacking. The packages are the
+On macOS or Linux, use `_work/.venv/bin/python`. The whole run takes about one minute. The packages are the
 project's own locked versions (`requirements-mlx-v5.lock.txt`) minus the MLX, torch and transformers inference
 stack, which is deliberately absent so that inference is impossible.
+
+The deepest path inside the snapshot is 146 characters. On Windows without long-path support, clone into a short
+folder or pass a short work directory, for example `reproduce.py --work-dir C:\pdw`; the script checks the length
+before unpacking.
 
 ### What the adapter changes, and what it does not
 
