@@ -9,6 +9,7 @@ Usage: python recompute_v15_v16.py [PROJECT_DIR]
 Writes recompute_v15_v16.json next to this script.
 """
 import json
+import os
 import sys
 from collections import Counter, defaultdict
 from pathlib import Path
@@ -16,7 +17,7 @@ from pathlib import Path
 import numpy as np
 
 HERE = Path(__file__).resolve().parent
-PROJECT = Path(sys.argv[1]) if len(sys.argv) > 1 else HERE.parents[1] / "_work/v16/project"
+PROJECT = Path(sys.argv[1]) if len(sys.argv) > 1 else Path(os.environ.get("PD_WORK") or HERE.parents[1] / "_work") / "v16/project"
 RUNS = PROJECT / "results/runs"
 
 

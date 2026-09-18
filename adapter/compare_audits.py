@@ -8,11 +8,12 @@ SUBSTANTIVE.
 Usage: python adapter/compare_audits.py
 """
 import json
+import os
 import re
 from pathlib import Path
 
 REPO = Path(__file__).resolve().parents[1]
-PROJECT = REPO / "_work/v16/project"
+PROJECT = Path(os.environ.get("PD_WORK") or REPO / "_work") / "v16/project"
 ORIGINAL = "/Users/henrywang/Documents/ChatGPT/L3 lab/PreferenceDrift_ClaudeCode_Handoff_2026-09-04/project"
 TIMESTAMP = re.compile(r"^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}")
 

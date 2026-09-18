@@ -4,15 +4,18 @@ Checks the outer ZIP entries, the inner v16 ZIP hash/size/entry count/CRCs, ever
 file in HANDOFF_MANIFEST.json against the extracted working copy, and the four
 key SHA-256 values quoted in the handoff prompt. Writes a JSON report.
 
-Usage: python adapter/check_integrity.py [--work _work/v16] [--out outputs/00_integrity.json]
+Usage: python adapter/check_integrity.py [--work $PD_WORK/v16] [--out outputs/00_integrity.json]
+(PD_WORK defaults to _work/ inside the repository.)
 """
 import argparse
 import hashlib
 import json
+import os
 import zipfile
 from pathlib import Path
 
 REPO = Path(__file__).resolve().parents[1]
+WORK = Path(os.environ.get("PD_WORK") or REPO / "_work")  # see reproduce.py --work-dir
 INNER_SHA256 = "358d723519b6bf28b7d3223fe568a93be61bb6257c7af664f67e9ebd6b7f10f8"
 INNER_BYTES = 31_008_540
 KEY_FILES = {  # handoff prompt, section 6
@@ -37,7 +40,7 @@ def sha256(path):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--work", type=Path, default=REPO / "_work/v16")
+    ap.add_argument("--work", type=Path, default=WORK / "v16")
     ap.add_argument("--out", type=Path, default=REPO / "outputs/00_integrity.json")
     a = ap.parse_args()
     inner = REPO / "inputs/PreferenceDrift_Revision_v16_2026-09-16.zip"

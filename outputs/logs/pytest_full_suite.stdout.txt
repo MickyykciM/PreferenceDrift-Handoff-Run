@@ -6,7 +6,7 @@
 ______ test_package_preserves_code_and_data_excludes_runtime_and_secrets ______
 
 tmp_path = WindowsPath("E:/T'I'Y/PreferenceDrift-Handoff-Run/_work/pytest_tmp/test_package_preserves_code_an0")
-monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x000001D73B73FEC0>
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x000001591AA79A30>
 
     def test_package_preserves_code_and_data_excludes_runtime_and_secrets(tmp_path, monkeypatch):
         source = tmp_path / "source"
@@ -38,4 +38,4 @@ E       OSError: [WinError 1314] A required privilege is not held by the client:
 C:\Users\copyw\AppData\Roaming\uv\python\cpython-3.12-windows-x86_64-none\Lib\pathlib.py:1386: OSError
 =========================== short test summary info ===========================
 FAILED tests/test_measurement_package.py::test_package_preserves_code_and_data_excludes_runtime_and_secrets
-1 failed, 282 passed in 42.29s
+1 failed, 282 passed in 41.19s

@@ -5,7 +5,8 @@ snapshot project as cwd. Nothing is written inside the snapshot: derived audits
 are written to outputs/official/, logs to outputs/logs/. The project's --write
 flags (which would overwrite results/analyses/*.json) are never used.
 
-Usage: python adapter/run_official_audits.py [--project _work/v16/project]
+Usage: python adapter/run_official_audits.py [--project $PD_WORK/v16/project]
+(PD_WORK defaults to _work/ inside the repository.)
 """
 import argparse
 import json
@@ -16,7 +17,8 @@ import time
 from pathlib import Path
 
 REPO = Path(__file__).resolve().parents[1]
-V14 = ("results/runs/20260914_repetition_qwen3_8bit_dev_v14", "results/runs/20260914_repetition_qwen3_8bit_holdout_v14",
+WORK = Path(os.environ.get("PD_WORK") or REPO / "_work")  # see reproduce.py --work-dir
+V14 =("results/runs/20260914_repetition_qwen3_8bit_dev_v14", "results/runs/20260914_repetition_qwen3_8bit_holdout_v14",
        "results/designs/repetition_qwen3_8bit_locked_selection_v14.json")
 V15_PLAN = "results/designs/pressure_v15_locked_plan.json"
 
@@ -42,13 +44,13 @@ def steps(out):
         ("v16_full_audit", ["call", "diagnostics.audit_revision_v16:audit", "--json-out", o("revision_v16_final_audit.rerun.json"),
                             "--args-json", json.dumps(["path:results/runs/20260916_revision_v16"])]),
         ("pytest_full_suite", ["pytest", "-q", "-p", "no:cacheprovider", "--junitxml=" + o("pytest_windows_adapter.xml"),
-                               "--basetemp=" + str(REPO / "_work/pytest_tmp")]),
+                               "--basetemp=" + str(WORK / "pytest_tmp")]),
     ]
 
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--project", type=Path, default=REPO / "_work/v16/project")
+    ap.add_argument("--project", type=Path, default=WORK / "v16/project")
     ap.add_argument("--only", nargs="*")
     a = ap.parse_args()
     out, logs = REPO / "outputs/official", REPO / "outputs/logs"

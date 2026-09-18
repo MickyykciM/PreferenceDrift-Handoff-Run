@@ -3,7 +3,7 @@
 The script expects the 2026-09-04 package layout beside it:
     <dir>/audit_results.py
     <dir>/PreferenceDrift_ClaudeCode_Handoff_2026-09-04/project/...
-This builds that layout under _work/api_audit_layout/ with a directory junction
+This builds that layout under $PD_WORK/api_audit_layout/ (default _work/) with a directory junction
 (Windows) or symlink (POSIX) that points at the extracted v16 project, runs a
 byte-identical copy of the script, and compares its JSON output with
 inputs/audit_results.json field by field and by line-ending-normalised hash.
@@ -22,8 +22,9 @@ import sys
 from pathlib import Path
 
 REPO = Path(__file__).resolve().parents[1]
-PROJECT = REPO / "_work/v16/project"
-LAYOUT = REPO / "_work/api_audit_layout"
+WORK = Path(os.environ.get("PD_WORK") or REPO / "_work")  # see reproduce.py --work-dir
+PROJECT = WORK / "v16/project"
+LAYOUT = WORK / "api_audit_layout"
 LINK = LAYOUT / "PreferenceDrift_ClaudeCode_Handoff_2026-09-04" / "project"
 OUT = REPO / "recompute/api_v1_v3/audit_results_rerun.json"
 

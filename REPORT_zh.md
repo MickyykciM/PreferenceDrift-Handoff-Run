@@ -639,6 +639,8 @@ uv pip install --python _work/.venv/Scripts/python.exe numpy==2.5.3 jsonschema==
 _work/.venv/Scripts/python.exe reproduce.py
 ```
 
+快照内最深的路径有 146 个字符。Windows 若未开启长路径支持，需要放在较短的目录，或指定较短的工作目录，例如 `reproduce.py --work-dir C:\pdw`；脚本会在解压前检查长度。
+
 ## 附录 B：文件索引
 
 | 路径 | 内容 |

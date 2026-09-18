@@ -1,5 +1,5 @@
 {
-  "created_utc": "2026-09-18T04:15:19.925042+00:00",
+  "created_utc": "2026-09-18T04:36:03.015328+00:00",
   "integrity_ok": true,
   "decision": {
     "scoped_measurement_ready": true,
@@ -3929,7 +3929,7 @@
     "development_run": "results/runs/20260914_repetition_qwen3_8bit_dev_v14"
   },
   "previous_failed_rounds": {
-    "created_utc": "2026-09-18T04:15:19.472064+00:00",
+    "created_utc": "2026-09-18T04:36:02.585976+00:00",
     "integrity_ok": true,
     "decision": {
       "scoped_measurement_ready": false,
@@ -7140,7 +7140,7 @@
       "development_run": "results/runs/20260914_guided_qwen3_4b_8bit_dev_v13"
     },
     "previous_failed_rounds": {
-      "created_utc": "2026-09-18T04:15:19.173461+00:00",
+      "created_utc": "2026-09-18T04:36:02.300192+00:00",
       "integrity_ok": true,
       "decision": {
         "scoped_measurement_ready": false,
@@ -9499,7 +9499,7 @@
         "completed_generations_through_v11": 1727,
         "unfinished_generations": 2,
         "through_v9": {
-          "created_utc": "2026-09-18T04:15:18.771163+00:00",
+          "created_utc": "2026-09-18T04:36:01.913698+00:00",
           "integrity_ok": true,
           "decision": {
             "scoped_measurement_ready": false,
@@ -11926,7 +11926,7 @@
             }
           },
           "previous_failed_rounds": {
-            "created_utc": "2026-09-18T04:15:18.621578+00:00",
+            "created_utc": "2026-09-18T04:36:01.769193+00:00",
             "integrity_ok": true,
             "decision": {
               "development_passed": false,
@@ -13571,7 +13571,7 @@
               }
             },
             "previous_failed_rounds": {
-              "created_utc": "2026-09-18T04:15:18.541058+00:00",
+              "created_utc": "2026-09-18T04:36:01.690692+00:00",
               "integrity_ok": true,
               "decision": {
                 "development_passed": false,
@@ -15220,7 +15220,7 @@
                 }
               },
               "previous_failed_round": {
-                "created_utc": "2026-09-18T04:15:18.482169+00:00",
+                "created_utc": "2026-09-18T04:36:01.632251+00:00",
                 "integrity_ok": true,
                 "scope": "independent single-axis formal truth/entailment only",
                 "decision": {

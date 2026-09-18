@@ -29,6 +29,7 @@ from __future__ import annotations
 import argparse
 import hashlib
 import itertools
+import os
 import json
 import platform
 import re
@@ -41,7 +42,7 @@ from pathlib import Path
 
 import numpy as np
 
-DEFAULT_PROJECT = r"E:\T'I'Y\PreferenceDrift-Handoff-Run\_work\v16\project"
+DEFAULT_PROJECT = str(Path(os.environ.get("PD_WORK") or Path(__file__).resolve().parents[2] / "_work") / "v16/project")
 ORDERS = ("positive_first", "negative_first")
 ENUMS = {"truth": ("TRUE", "FALSE"), "validity": ("VALID", "INVALID")}
 YESNO = {"truth": {"YES": "TRUE", "NO": "FALSE"}, "validity": {"YES": "VALID", "NO": "INVALID"}}

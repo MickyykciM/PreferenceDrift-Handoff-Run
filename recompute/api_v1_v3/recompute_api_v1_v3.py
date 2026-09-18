@@ -13,7 +13,7 @@ Guarantees:
     (refuses to write inside the project).
 
 Usage:  python recompute_api_v1_v3.py [PROJECT_DIR] [--out OUTPUT_JSON]
-Default PROJECT_DIR: E:\\T'I'Y\\PreferenceDrift-Handoff-Run\\_work\\v16\\project
+Default PROJECT_DIR: $PD_WORK/v16/project (PD_WORK defaults to _work/ inside the repository)
 Dependencies: Python 3.10+ standard library only (numpy allowed by the brief, not needed).
 Bootstrap intervals use random.Random(20260909).choices exactly as the project did (CPython 3.12).
 """
@@ -25,6 +25,7 @@ import csv
 import hashlib
 import json
 import math
+import os
 import platform
 import random
 import re
@@ -35,7 +36,7 @@ from datetime import datetime, timezone
 from itertools import combinations, product
 from pathlib import Path
 
-DEFAULT_PROJECT = Path(r"E:\T'I'Y\PreferenceDrift-Handoff-Run\_work\v16\project")
+DEFAULT_PROJECT = Path(os.environ.get("PD_WORK") or Path(__file__).resolve().parents[2] / "_work") / "v16/project"
 BAD = frozenset({"incorrect", "unclear"})
 
 

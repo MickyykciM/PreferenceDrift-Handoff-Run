@@ -1,7 +1,7 @@
 {
   "script": "recompute_api_v1_v3.py",
   "project": "E:\\T'I'Y\\PreferenceDrift-Handoff-Run\\_work\\v16\\project",
-  "generated_utc": "2026-09-18T04:16:13.642153+00:00",
+  "generated_utc": "2026-09-18T04:36:55.048797+00:00",
   "python": "3.12.12",
   "policy": "read-only recompute from saved per-generation/per-label files; no model inference; no project imports",
   "status_counts": {
